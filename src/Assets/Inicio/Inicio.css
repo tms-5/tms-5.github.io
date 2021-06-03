@@ -1,0 +1,28 @@
+.vid-dev{
+    bottom: 5vh;
+    position: absolute;
+}
+.vid-dev > video {
+    width: 50%;
+}
+@media screen and (max-width: 1100px) {
+    .vid-dev > video {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .vid-dev > video {
+        width: 100%;
+    }
+    .vid-dev  {
+       bottom: 5vh;
+    }
+    .triangulo-1{
+        right: 50vw;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .vid-dev > video {
+        width: 100%;
+    }
+}

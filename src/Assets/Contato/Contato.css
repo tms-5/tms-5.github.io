@@ -1,0 +1,10 @@
+.svg-contato > image{
+    color: white;
+}
+.svg-contato > image:hover{
+    transition: 0.2s linear;
+    filter: opacity(0.4) brightness(39%) sepia(13%) drop-shadow(0 0 0 #a02cfe);
+}
+#Camada_1, #Camada_2, #Camada_3, #Camada_4{
+    width: 35px !important;
+}

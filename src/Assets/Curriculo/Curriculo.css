@@ -1,0 +1,17 @@
+.bg-progress-bar{
+    background-color: #bebebe !important;
+}
+.progress-bar{
+    background-color: rgb(160 0 255) !important;
+}
+.progress{
+    height: 11px !important;
+}
+.linha-port{
+    width: 50%;
+}
+@media screen and (max-width: 580px) {
+    .linha-port{
+        width: 98%;
+    }
+}

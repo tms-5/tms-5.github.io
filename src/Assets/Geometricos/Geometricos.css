@@ -1,0 +1,125 @@
+.triangulo-1{
+    right: 4vw;
+    top: 30vh;
+    animation: skew 25s infinite;
+    z-index: 10;
+}
+.quadrado-1{
+    bottom:-5vh;
+    left: 3rem;
+    filter: blur(10px);
+    animation: zoom 5s infinite;
+    z-index: 5;
+}
+.cilindro-1{
+    opacity: 0.5;
+    top: 25vh;
+    left: 5vw;
+    filter: blur(4px);
+    animation: cilindro1 20s infinite;
+}
+.triangulo-2{
+    top: 15vh;
+    left: 40vw;
+    transform: rotate(90deg);
+    animation: triangulo2 35s infinite;
+}
+.quadrado-2{
+    bottom: 10vh;
+    right: 23rem;
+    animation: quadrado2 15s infinite;
+    z-index: 10;
+}
+.cilindro-2{
+    opacity: 0.9;
+    top: 50vh;
+    right: 40vw;
+    animation: skew2 40s infinite;
+}
+.triangulo-sobre-1{
+    top: 125vh;    
+    right: 15vw;
+    animation: skew2 8s infinite;
+}
+.quadrado-sobre-1{
+    top: 125vh;    
+    left: 15vw;
+}
+.cilindro-sobre-1{
+    top: 175vh;    
+    right: 25vw;
+    filter: blur(2px);
+    opacity: 0.7;
+    animation: triangulo3 25s infinite;
+}
+.triangulo-sobre-2{
+    top: 170vh;    
+    left: 5vw;
+    opacity: 0.5;
+    animation: skew 40s infinite;
+}
+.cilindro-sobre-2{
+    top: 135vh;    
+    right: 35vw;
+    transform: rotate(150deg);
+    filter: blur(2px);
+    opacity: 0.4;
+}
+.quadrado-curriculo-1{
+    top: 225vh;
+    left: 10vw;
+}
+.quadrado-curriculo-2{
+    top: 250vh;
+    transform: rotate(250deg);
+    right: 10vw;
+}
+.quadrado-curriculo-3{
+    top: 200vh;
+    right: 10vw;
+    animation: zoom 15s infinite;
+    opacity: 0.5;
+}
+.cilindro-curriculo-1{
+    top: 280vh;
+    left: 10vw;
+    transform: rotate(180deg);
+    animation: triangulo3 14s infinite;
+}
+.triangulo-curriculo-1{
+    top: 305vh;
+    right: 10vw;
+    animation: cilindro2 60s infinite;
+}
+.quadrado-port-1{
+    top: 350vh;
+    left: 12vw;
+    animation: quadrado1 25s linear infinite;
+}
+.cilindro-port-1{
+    top: 370vh;
+    right: 10vw;
+}
+.triangulo-port-1{
+    top: 400vh;    
+    left: 40vw;
+    filter: blur(4px);
+}
+.quadrado-contato-1{
+    top: 470vh;
+    left: 2vw;
+    animation: zoom 25s linear infinite;
+    opacity: 0.8;
+    filter: blur(2px);
+}
+.quadrado-contato-2{
+    top: 470vh;
+    right: 22vw;
+}
+.cilindro-contato-1{
+    top: 440vh;
+    right: 10vw;    
+    transform: rotate(90deg);
+    opacity: 0.8;
+    filter: blur(2px);
+}

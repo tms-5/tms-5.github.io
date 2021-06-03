@@ -1,0 +1,52 @@
+.bg-topbar{
+    background-color: #1a162a;
+}
+.b-purple{
+    border-bottom: 2px solid #8136be;
+}
+.desktop-version{
+    display: flex;
+}
+.mobile-version{
+    display: none;
+}
+.menu-mobile{
+    position: fixed;
+    margin-top: 65px !important;    
+    opacity: 0;
+    visibility: hidden;
+    height: 0%;
+    transition: opacity 1s, visibility 1s, height 1s;
+    overflow: hidden;
+}
+.show{
+    opacity: 1 ;
+    visibility: visible;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+@keyframes left-right {
+    0% {
+        left: -100%;
+      }
+      100% {
+        left: 0%;
+      }
+}
+
+    
+@media screen and (max-width: 786px) {
+    .desktop-version{
+        display: none !important;
+    }
+    .mobile-version{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 400px){
+    .img-top{
+        width: 100%;
+        min-width: 100px;
+    }
+}
