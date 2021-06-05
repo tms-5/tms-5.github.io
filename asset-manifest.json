@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ede31bba.chunk.css",
-    "main.js": "/static/js/main.eebbb8cb.chunk.js",
-    "main.js.map": "/static/js/main.eebbb8cb.chunk.js.map",
+    "main.css": "/static/css/main.2bdf0a5c.chunk.css",
+    "main.js": "/static/js/main.c28bd626.chunk.js",
+    "main.js.map": "/static/js/main.c28bd626.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1d652c97.js",
     "runtime-main.js.map": "/static/js/runtime-main.1d652c97.js.map",
     "static/css/2.3d116079.chunk.css": "/static/css/2.3d116079.chunk.css",
@@ -12,9 +12,9 @@
     "static/js/3.da7332ec.chunk.js.map": "/static/js/3.da7332ec.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.3d116079.chunk.css.map": "/static/css/2.3d116079.chunk.css.map",
-    "static/css/main.ede31bba.chunk.css.map": "/static/css/main.ede31bba.chunk.css.map",
+    "static/css/main.2bdf0a5c.chunk.css.map": "/static/css/main.2bdf0a5c.chunk.css.map",
     "static/js/2.6f4aa804.chunk.js.LICENSE.txt": "/static/js/2.6f4aa804.chunk.js.LICENSE.txt",
-    "static/media/CV-Thamires-Morais.4505dd9e.pdf": "/static/media/CV-Thamires-Morais.4505dd9e.pdf",
+    "static/media/CV-Thamires-Morais.6ea45132.pdf": "/static/media/CV-Thamires-Morais.6ea45132.pdf",
     "static/media/MV-telecom.c5f1b40d.png": "/static/media/MV-telecom.c5f1b40d.png",
     "static/media/X.4b18f109.gif": "/static/media/X.4b18f109.gif",
     "static/media/centauro.97f6f5b9.png": "/static/media/centauro.97f6f5b9.png",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.1d652c97.js",
     "static/css/2.3d116079.chunk.css",
     "static/js/2.6f4aa804.chunk.js",
-    "static/css/main.ede31bba.chunk.css",
-    "static/js/main.eebbb8cb.chunk.js"
+    "static/css/main.2bdf0a5c.chunk.css",
+    "static/js/main.c28bd626.chunk.js"
   ]
 }
