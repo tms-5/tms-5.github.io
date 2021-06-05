@@ -8,7 +8,7 @@ import tascom from '../Img/Projetos/tascom.png'
 
 export default function Portfolio(){
 const [projetos] = useState([{nome: "Centauro", image: centauro, texto: "Esse projeto foi um desafio desenvolvido para a aplicação em uma vaga. A sua finalidade era calcular a distância entre 2 pontos num plano cartesiano. Os pontos eram as lojas que informavam as 3 mais próximas ao usuário e a distância entre ele e as lojas."},
-{nome: "Mockup - MvTelecom", image: mv, texto:"Projeto em andamento, em breve vídeo."}, {nome: "Mockup - Nortax", image: nortax, texto:"Mockup desenvolvido para uma empresa de consultoria jurídica voltada para tecnologia."},
+{nome: "Mockup - MvTelecom", image: mv, texto:"Projeto em andamento, em breve vídeo."}, {nome: "Mockup - Consultoria Jurídica", image: nortax, texto:"Mockup desenvolvido para uma empresa de consultoria jurídica voltada para tecnologia."},
 {nome: "Mockup - TASCOM", image: tascom, texto: "Projeto do site da TASCOM informática em andamento, em breve vídeo."}, {nome: "Virttus Energia", image: Virttus, texto: "Projeto de simulação de energia"}])
 return(
     <div className="bg-black font-barlow text-center h-100v d-grid" id="Portfolio">   

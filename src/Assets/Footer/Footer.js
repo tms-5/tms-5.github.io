@@ -46,6 +46,26 @@ return(
             </div>
         </div>
     </div>
+    <div className="mobile-footer row d-flex1 m-auto jusitfy-center p-2">
+        <div className="col w-50 m-auto">
+        <div className="c-white fw-500 f-1-2  w-fit m-auto jusitfy-center">
+                Thamires Morais de Sousa
+            </div>
+            <div className="c-gray-claro w-fit m-auto jusitfy-center">
+                UI Designer |<br/>
+                Front-end Software Engenieer
+            </div>
+        </div>
+        <div className="col w-50 m-auto">
+        <div className="c-white fw-500 f-1-2 ">
+               Contato
+            </div>
+            <div className="c-gray-claro">
+               +55 81 997350799<br/>
+               tms5@cin.ufpe.br
+            </div>
+        </div>
+    </div>
     <div className="row c-white text-center w-75 m-auto pt-2 justify-center" style={{borderTop: "1px solid rgb(190 190 190 / 37%)"}}>
         2021 &nbsp; | &nbsp; Todos os direitos reservados.
     </div>

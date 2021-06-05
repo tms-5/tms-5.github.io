@@ -11,7 +11,7 @@ return(
     <div className="bg-black font-barlow text-center h-100v d-grid" id="Contato">   
          <div className="centralizar-meio">       
     
-    <div className="text-start w-75 c-white m-auto">                  
+    <div className="text-start c-white m-auto" style={{width: "82%"}}>                  
        <div className="c-white f-2 text-center mb-5">&lt; CONTATO/&gt;</div>         
        <div className="row m-auto text-center pt-5">
            <div className="col mt-1" style={{minWidth: "65px"}}>

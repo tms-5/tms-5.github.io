@@ -1,8 +1,22 @@
 .linha-footer{
     width: 50%;
 }
+.mobile-footer{
+    display: none !important;
+}
+.linha-footer{
+    display: block;
+}
 @media screen and (max-width: 1300px) {
     .linha-footer{
         width: 100%;
+    }
+}
+@media screen and (max-width: 647px) {
+    .linha-footer{
+        display: none !important;
+    }
+    .mobile-footer{
+        display: flex !important;
     }
 }
