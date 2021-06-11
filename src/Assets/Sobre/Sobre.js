@@ -18,7 +18,7 @@ return(
                     <span className="c-purple m-0"> website</span>.</p>
 
                 <p>Já participei de um hackaton voltado para a área de educação, onde desenvolvemos um website adaptados para pessoas deficientes visuais, e ganhamos em primeiro
-                    lugar. Atualmente trabalho como egenheira de software <span className="c-purple m-0">Front-end</span> no Grupo SBF.
+                    lugar. Atualmente trabalho como engenheira de software <span className="c-purple m-0">Front-end</span> no Grupo SBF.
                 </p>
              </div>
        

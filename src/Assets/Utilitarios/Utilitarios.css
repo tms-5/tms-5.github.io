@@ -67,6 +67,9 @@
 .c-white{
     color: white !important;
 }
+.c-black{
+    color: black;
+}
 .c-gray{
     color: #555555 !important;
 }
@@ -107,7 +110,7 @@
 
 /*Display*/
 .d-grid{
-    display: grid;
+    display: grid !important;
 }
 .d-flex1{
     display: flex;
@@ -191,6 +194,9 @@
 .h-100v{
     min-height: 100vh;
 }
+.h-80vh{
+    height: 80vh;
+}
 
 /*Border radius*/
 .b-13{
@@ -207,6 +213,9 @@
 }
 .o-hidden{
     overflow: hidden;
+}
+.o-auto{
+    overflow: auto;
 }
 .align-center{
     align-items: center;
@@ -229,6 +238,12 @@
 }
 .t-none{
     text-decoration: none !important;
+}
+.opacity-0{
+    opacity: 0;
+}
+.opacity-1{
+    opacity: 1;
 }
 
 .btn-black{
