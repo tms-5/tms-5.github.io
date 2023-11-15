@@ -11,3 +11,97 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.d-flex {
+  display: flex;
+}
+
+.justify-space-btween {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.min-width {
+  width: min-content;
+}
+
+.margin-top-small {
+  margin-top: .5em;
+}
+
+.margin-top-medium {
+  margin-top: .75em;
+}
+
+.margin-top-big {
+  margin-top: 1em;
+}
+
+.margin-bottom-small {
+  margin-bottom: .5em;
+}
+
+.margin-bottom-medium {
+  margin-bottom: .75em;
+}
+
+.margin-bottom-big {
+  margin-bottom: 1em;
+}
+
+.margin-right-small {
+  margin-right: .5em;
+}
+
+.margin-right-medium {
+  margin-right: .75em;
+}
+
+.margin-right-big {
+  margin-right: 1em;
+}
+
+.margin-left-small {
+  margin-left: .5em;
+}
+
+.margin-left-medium {
+  margin-left: .75em;
+}
+
+.margin-left-big {
+  margin-left: 1em;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center !important;
+}
+
+/*Tamanho da fonte*/
+.fs-06 {
+  font-size: 0.6rem !important;
+}
+
+.fs-07 {
+  font-size: 0.7rem !important;
+}
+
+.fs-08 {
+  font-size: 0.8rem !important;
+}
+
+.fs-09 {
+  font-size: 0.9rem !important;
+}
+
+.fs-1-2 {
+  font-size: 1.2rem !important;
+}
