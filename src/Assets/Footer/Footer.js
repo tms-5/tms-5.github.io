@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
-export default function Footer() {
+import { useTranslation } from "react-i18next";
+export default function Portfolio() {
+  const { t } = useTranslation();
   return (
     <div className="bg-topbar font-barlow">
       <div className="row linha-footer p-3 m-auto">
@@ -12,27 +14,27 @@ export default function Footer() {
           </div>
         </div>
         <div className="col">
-          <div className="c-white fw-500 f-1-2">Mapa do site</div>
+          <div className="c-white fw-500 f-1-2">{t("Mapa do site")}</div>
           <div className="c-gray-claro d-grid mt-2">
             <a href="#Inicio" className="c-gray-claro o-none w-fit">
-              Início
+              {t("Inicio")}
             </a>
             <a href="#Sobre" className="c-gray-claro o-none w-fit">
-              Sobre
+              {t("Sobre")}
             </a>
             <a href="#Curriculo" className="c-gray-claro o-none w-fit">
-              Curriculo
+              {t("Curriculo")}
             </a>
             <a href="#Portfolio" className="c-gray-claro o-none w-fit">
-              Portfólio
+              {t("Portfólio")}
             </a>
             <a href="#Contato" className="c-gray-claro o-none w-fit">
-              Contato
+              {t("Contato")}
             </a>
           </div>
         </div>
         <div className="col">
-          <div className="c-white fw-500 f-1-2">Redes sociais</div>
+          <div className="c-white fw-500 f-1-2">{t("Redes sociais")}</div>
           <div className="c-gray-claro d-grid mt-2">
             <a
               className="c-gray-claro o-none w-fit"
@@ -53,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="col">
-          <div className="c-white fw-500 f-1-2">Contato</div>
+          <div className="c-white fw-500 f-1-2">{t("Contato")}</div>
           <div className="c-gray-claro mt-2">thamiiresmorais2@gmail.com</div>
         </div>
       </div>
@@ -68,17 +70,15 @@ export default function Footer() {
           </div>
         </div>
         <div className="col w-50 m-auto">
-          <div className="c-white fw-500 f-1-2 ">Contato</div>
-          <div className="c-gray-claro">
-            thamiiresmorais2@gmail.com
-          </div>
+          <div className="c-white fw-500 f-1-2 ">{t("Contato")}</div>
+          <div className="c-gray-claro">thamiiresmorais2@gmail.com</div>
         </div>
       </div>
       <div
         className="row c-white text-center w-75 m-auto pt-2 justify-center"
         style={{ borderTop: "1px solid rgb(190 190 190 / 37%)" }}
       >
-        2021 &nbsp; | &nbsp; Todos os direitos reservados.
+        2023 &nbsp; | &nbsp; {t("Todos os direitos reservados")}.
       </div>
     </div>
   );

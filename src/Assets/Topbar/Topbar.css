@@ -1,26 +1,89 @@
-.bg-topbar{
+.bg-topbar {
     background-color: #1a162a;
 }
-.b-purple{
+
+.b-purple {
     border-bottom: 2px solid #8136be;
 }
-.desktop-version{
+
+.desktop-version {
     display: flex;
 }
-.mobile-version{
+
+.mobile-version {
     display: none;
 }
-.menu-mobile{
+
+.menu-mobile {
     position: fixed;
-    margin-top: 65px !important;    
+    margin-top: 65px !important;
     opacity: 0;
     visibility: hidden;
     height: 0%;
     transition: opacity 1s, visibility 1s, height 1s;
     overflow: hidden;
 }
-.show{
-    opacity: 1 ;
+
+.menu-mobile .dropdown {
+    place-content: center;
+}
+
+.logo-topbar {
+    min-width: 320px;
+}
+
+.language-square {
+    background: #2e284a;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    min-width: 97px;
+    text-wrap: nowrap;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 95px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: white;
+    background-color: #2e284a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    width: -webkit-fill-available;
+    text-align: center;
+}
+
+.dropdown button:hover {
+    background-color: #ddd;
+}
+
+.showDrop {
+    display: block;
+    z-index: 116;
+    margin-top: 145px;
+    position: fixed;
+}
+
+
+.show {
+    opacity: 1;
     visibility: visible;
     height: auto;
     padding-bottom: 2rem;
@@ -29,24 +92,31 @@
 @keyframes left-right {
     0% {
         left: -100%;
-      }
-      100% {
+    }
+
+    100% {
         left: 0%;
-      }
+    }
 }
 
-    
-@media screen and (max-width: 786px) {
-    .desktop-version{
+
+@media screen and (max-width: 920px) {
+    .desktop-version {
         display: none !important;
     }
-    .mobile-version{
+
+    .mobile-version {
         display: block !important;
     }
 }
-@media screen and (max-width: 400px){
-    .img-top{
-        width: 100%;
+
+@media screen and (max-width: 400px) {
+    .img-top {
+        width: 80%;
         min-width: 100px;
+    }
+
+    .logo-topbar {
+        width: min-content;
     }
 }
