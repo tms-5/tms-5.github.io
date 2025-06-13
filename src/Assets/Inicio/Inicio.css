@@ -70,7 +70,7 @@
     top: 9px;
     transform: translateX(-50%);
     z-index: 11;
-    margin-right: -136px;
+    margin-right: -102px;
 }
 
 .balloon-svg-2 {
@@ -101,16 +101,22 @@
     min-height: fit-content;
 }
 
+.info-stars {
+    min-width: 162px;
+    float: inline-start;
+}
+
 .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: -moz-fit-content;
-    width:200px;
+    width: 200px;
     flex-direction: row;
     gap: 8px;
     justify-self: center;
+    z-index: 23;
 }
 
 .social {

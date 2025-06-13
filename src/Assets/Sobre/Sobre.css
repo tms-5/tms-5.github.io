@@ -24,7 +24,6 @@
 
 #Sobre #img-2 {
     z-index: 3;
-    height: max-content;
 }
 #Sobre > .d-flex {
     overflow: hidden;
