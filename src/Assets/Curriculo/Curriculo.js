@@ -3,7 +3,14 @@ import TimeLine from "./TimeLine";
 import { useTranslation } from "react-i18next";
 
 export default function Curriculo() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const lang = i18n.language;
+
+  const pdfPath =
+    lang === "en"
+      ? "/CV/Resume-Thamires-Morais.pdf"
+      : "/CV/CV-Thamires-Morais.pdf";
 
   const WorkExperience =
     t("curriculo.work_experience", { returnObjects: true }) || [];
@@ -25,7 +32,7 @@ export default function Curriculo() {
           ))}
           <div className="d-flex flex-column align-items-center justify-content-center button-curriculo">
             <a
-              href={t("curriculo.link curriculo")}
+              href={pdfPath}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
