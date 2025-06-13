@@ -15,12 +15,20 @@
     background-color: black !important;
 }
 
+.bg-gray{
+    background-color: #F2F4F7 !important;
+}
+
 /*Position*/
 .p-absolute{
     position: absolute;
 }
 .p-fixed{
     position: fixed !important;
+}
+
+.p-relative{
+    position: relative;
 }
 
 /*Margin*/
@@ -54,13 +62,34 @@
 .m-inherit{
     margin: inherit;
 }
+.mb-1r{
+    margin-bottom: 1rem;
+}
 
 /*Padding*/
+.p-05{
+    padding: 0.5rem;
+}
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
 .pr-2r{
     padding-right: 2rem;
 }
 .pr-1r{
     padding-right: 1rem;
+}
+.pb-1r{
+    padding-bottom: 1rem;
+}
+.pb-2r{
+    padding-bottom: 2rem;
 }
 
 /*Font color*/
@@ -80,7 +109,7 @@
     color: #019f63;
 }
 .c-purple{
-    color: rgb(194 99 249);
+    color: #3E0052 !important;
 }
 
 /*Justify Content*/
@@ -206,6 +235,19 @@
 .z-10{
     z-index: 10;
 }
+/* gap */
+.g-1{
+    gap: 1rem;
+}
+.g-2{
+    gap: 2rem;
+}
+.g-3{
+    gap: 3rem;
+}
+.g-4{
+    gap: 4rem;
+}
 
 /*Outros*/
 .c-pointer{
@@ -225,6 +267,9 @@
 }
 .align-baseline{
     align-items: baseline;
+}
+.align-start{
+    align-items: flex-start;
 }
 .centralizar-meio{
     display: flex;
@@ -262,4 +307,18 @@
     color: black;
     font-weight: 500;
     background-color: rgb(219, 219, 219);
+}
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-reveal:first-child {
+  overflow: hidden;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

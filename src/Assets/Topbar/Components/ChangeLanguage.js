@@ -21,25 +21,31 @@ const ChangeLanguage = () => {
   return (
     <>
       <div
-        className="language-square p-2 c-white c-pointer"
+        className="col f-1-1 p-0 c-pointer p-relative"
+        id="changeLanguage"
         onClick={() => setDropdown(!dropwdon)}
       >
-        <FontAwesomeIcon
-          icon={faGlobe}
-          className="c-white margin-right-small"
-        />
-        {language === "PT" ? "PT-BR" : "EN-USA"}
-        <FontAwesomeIcon
-          icon={faChevronUp}
-          className={`margin-left-small fs-08 c-blue ${!dropwdon && "rotate"}`}
-        />
-      </div>
-      <div
-        id="myDropdown"
-        className={`dropdown-content ${dropwdon && "showDrop"}`}
-      >
-        <button onClick={handleChangeLanguage}>PT-BR</button>
-        <button onClick={handleChangeLanguage}>EN-USA</button>
+        {" "}
+        <div className="no-br p-2">
+          <FontAwesomeIcon
+            icon={faGlobe}
+            className="margin-right-small"
+          />
+          {language === "PT" ? "PT-BR" : "EN-USA"}
+          <FontAwesomeIcon
+            icon={faChevronUp}
+            className={`margin-left-small fs-08 c-blue ${
+              !dropwdon && "rotate"
+            }`}
+          />
+        </div>
+        <div
+          id="myDropdown"
+          className={`dropdown-content ${dropwdon && "showDrop"}`}
+        >
+          <button onClick={handleChangeLanguage}>PT-BR</button>
+          <button onClick={handleChangeLanguage}>EN-USA</button>
+        </div>
       </div>
     </>
   );

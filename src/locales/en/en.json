@@ -2,33 +2,76 @@
   "translation": {
     "Inicio": "Home",
     "Sobre": "About",
-    "Curriculo": "Resume",
+    "Curriculo": "Professional Experience",
     "Portfolio": "Portfolio",
-    "Contato": "Contact",
-    "Criatividade": "Creativity",
-    "Liderança": "Leadership",
-    "Pontualidade": "Punctuality",
-    "Comunicação": "Communication",
-    "Compromisso": "Commitment",
-    "Proatividade": "Proactivity",
-    "Mapa do site": "Site Map",
-    "Redes sociais": "Social Media",
+    "Skills": "Skills",
+    "Formação": "Education",
+    "Formação description": "Graduated in Information Systems -",
+    "Formação UFPE": "Federal University of Pernambuco (UFPE)",
     "Todos os direitos reservados": "All rights reserved",
-    "Projeto TASCOM": "TASCOM Informatics website project",
-    "Saiba mais": "Learn more",
-    "Virttus Energia": "Energy simulation project",
-    "Consultoria Juridica": "Legal Consultancy",
-    "texto consultoria": "Mockup developed for a legal consultancy company in the technology field.",
-    "Visualizar currículo": "View Resume",
-    "Sobre parte 1": "Hello, my name is Thamires, I'm 24 years old and I work in front-end development and web design. I began my studies in Computer Science at UFPE in 2017 and later shifted to Information Systems in 2020. My main focus is on technologies like ReactJS and Svelte.",
-    "Sobre parte 2": "In my free time, I enjoy reading, gaming, photograph, hanging out with friends, and traveling. These activities help me relax and bring new ideas to my work.",
-    "Sobre parte 3": "I am always learning and seeking new challenges in my field, aiming to improve my skills and make a significant contribution to the projects I work on.",
-    "texto Centauro": "This project was a challenge developed for a job application. Its purpose was to calculate the distance between 2 points on a Cartesian plane. The points were the stores which informed the 3 closest to the user and the distance between them and the stores.",
-    "texto MVTelecom": "Mockup of the rebranding proposal for the MvTelecom website.",
-    "texto Eduardo": "Portfolio project for Eduardo. Under development.",
-    "texto inove": "Portfolio project for the Inove Recife agency.",
-    "texto Virttus": "Energy simulation project",
-    "Portfolio Eduardo": "Portfolio Eduardo",
-    "Portfolio Agência Inove": "Portfolio Inove Agency"
+    "Sobre parte 1": "Front-end developer with extensive experience in modern web development technologies such as JavaScript, TypeScript, React, Svelte, Vue, and Lit. I have a strong passion for UI/UX, ensuring that every interface I develop not only meets technical standards but also provides a seamless user experience. My career has been focused on creating efficient and scalable interfaces, with an emphasis on standardization and maintenance of design systems. Additionally, I have experience in complex environments such as SAPUI5 and WordPress, delivering robust and integrated projects.",
+    "projeto_incrivel": "Do you have an <span class=\"highlight\">Amazing Project</span><br />in mind? <span class=\"highlight-alt\">Let's talk</span>",
+    "inicio": {
+      "hello": "Hello!",
+      "im": "I'm",
+      "role": "Front-end Software Engineer",
+      "years": "8 years",
+      "experience": "of experience"
+    },
+    "curriculo": {
+      "download": "View Resume",
+      "link curriculo": "/CV-Thamires-Morais.pdf",
+      "title": "Professional Experience",
+      "work_experience": [
+        {
+          "company": "Neoway",
+          "position": "Frontend Developer",
+          "date": "May 2024",
+          "description": "As a front-end developer, I work on developing a robust design system using Lit, focusing on accessibility and user experience. I maintain the company's component library, providing reusable and practical solutions to facilitate developers' work. Additionally, I use Vue.js in other projects to create efficient and integrated interfaces."
+        },
+        {
+          "company": "Dione",
+          "position": "Frontend Developer",
+          "date": "Mar 2023 - May 2024",
+          "description": "As a senior developer, I worked with ReactJS and Svelte in developing interactive interfaces, applying best design practices to create engaging experiences. I also managed a team of junior developers, providing support and technical guidance to ensure project quality and efficiency."
+        },
+        {
+          "company": "Avanade",
+          "position": "Mid-level Frontend Developer",
+          "date": "Jun 2021 - Feb 2023",
+          "description": "I used SAPUI5 for the development of robust enterprise applications, FIORI to test and improve user experience, and implemented DEVOPS practices to ensure the quality and efficiency of the development process."
+        },
+        {
+          "company": "Tascom",
+          "position": "Junior Frontend Developer",
+          "date": "Jan 2021 - Jun 2021",
+          "description": "I worked with ReactJS, using agile methodologies and tools like Trello for project management in Kanban format. I also performed design work using Photoshop and Figma to create user interfaces (UI) and user experience (UX)."
+        },
+        {
+          "company": "HAUT",
+          "position": "Frontend Developer & UI/UX (Internship)",
+          "date": "Jun 2020 - Jan 2021",
+          "description": "During my internship, I improved my skills in ReactJS and prototype development using Figma, applying UI and UX concepts in creating intuitive and attractive interfaces."
+        },
+        {
+          "company": "UFPE",
+          "position": "Frontend Developer & UI/UX (Scholarship Holder)",
+          "date": "Jan 2018 - May 2023",
+          "description": "I worked as a UFPE scholarship holder, playing an important role in front-end development and web design. I was responsible for creating interactive and responsive interfaces using HTML, CSS, and JavaScript, as well as developing UX strategies to provide a quality user experience."
+        }
+      ]
+    },
+    "footer": {
+      "connect": "Let's connect",
+      "description": "Developing interfaces that make life easier for users and maintainers. If you have a cool project, let's talk.",
+      "navigation": "Navigation",
+      "home": "Home",
+      "about": "About",
+      "service": "Service",
+      "resume": "Resume",
+      "project": "Project",
+      "contact": "Contact",
+      "copyright": "Copyright© 2025. All rights reserved."
+    }
   }
 }

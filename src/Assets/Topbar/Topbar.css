@@ -1,27 +1,96 @@
 .bg-topbar {
-    background-color: #1a162a;
+    margin-top: 25px;
+    justify-self: anchor-center;
+    width: 80%;
 }
 
-.b-purple {
-    border-bottom: 2px solid #8136be;
+.topbar-desktop .b-purple {
+    background-color: #3e0052;
+    border-radius: 50px;
+}
+
+.topbar-desktop .no-br.p-2 {
+    justify-items: center;
+}
+
+.menu-mobile .b-purple a {
+    color: #3e0052;
+}
+
+.topbar-desktop #changeLanguage {
+    color: white;
+    .no-br.p-2 {
+        text-align: center;
+    }
+}
+
+.menu-mobile #changeLanguage {
+    .no-br.p-2 {
+        justify-self: left;
+
+        svg {
+            padding-left: 3.5rem;
+        }
+    }
 }
 
 .desktop-version {
     display: flex;
 }
 
+.topbar-desktop a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.desktop-version .w-fit {
+    margin: auto;
+}
+
 .mobile-version {
     display: none;
+    backdrop-filter: saturate(180%) blur(20px);
+    justify-items: right;
 }
+
+.menu-mobile .w-fit {
+    padding-left: 2rem;
+}
+
+.mobile-version svg:first-child {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    opacity: .8;
+    width: 20px;
+    height: 45px;
+    cursor: pointer;
+    outline-offset: -7px;
+    transition: opacity .32s cubic-bezier(.4, 0, .6, 1), color .32s cubic-bezier(.4, 0, .6, 1);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 
 .menu-mobile {
     position: fixed;
-    margin-top: 65px !important;
     opacity: 0;
     visibility: hidden;
     height: 0%;
     transition: opacity 1s, visibility 1s, height 1s;
     overflow: hidden;
+    background-color: white;
+}
+
+.menu-mobile a {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .menu-mobile .dropdown {
@@ -29,11 +98,19 @@
 }
 
 .logo-topbar {
-    min-width: 320px;
+    width: 65px;
+    align-content: center;
+}
+
+.logo-topbar img {
+    margin-top: -1px;
+    width: 50px;
+    background-color: #3e0052;
+    padding: 14px 6px;
+    border-radius: 50px;
 }
 
 .language-square {
-    background: #2e284a;
     font-size: 0.9rem;
     border-radius: 10px;
     min-width: 97px;
@@ -61,7 +138,7 @@
 
 .dropdown-content button {
     color: white;
-    background-color: #2e284a;
+    background-color: #171717;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -77,16 +154,28 @@
 .showDrop {
     display: block;
     z-index: 116;
-    margin-top: 145px;
     position: fixed;
+    width: 164px;
+    margin-top: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
-
 
 .show {
     opacity: 1;
     visibility: visible;
-    height: auto;
+    height: 100%;
     padding-bottom: 2rem;
+}
+
+.topbar-desktop {
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+    background-color: #171717;
+    padding: 14px;
+    height: 65px;
+    overflow: hidden;
 }
 
 @keyframes left-right {
@@ -103,6 +192,11 @@
 @media screen and (max-width: 920px) {
     .desktop-version {
         display: none !important;
+    }
+
+    .bg-topbar {
+        width: 100%;
+        margin-top: 0;
     }
 
     .mobile-version {

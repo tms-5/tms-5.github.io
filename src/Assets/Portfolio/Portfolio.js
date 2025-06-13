@@ -74,12 +74,12 @@ export default function Portfolio() {
 
   return (
     <div
-      className="bg-black font-barlow text-center h-100v d-grid"
+      className="bg-gray font-barlow text-center h-100v d-grid"
       id="Portfolio"
     >
-      <div className="centralizar-meio">
-        <div className="text-start c-white m-auto">
-          <div className="c-white f-2 text-center mb-5">
+      <div className="centralizar-meio container">
+        <div className="text-start m-auto">
+          <div className="f-2 text-center mb-5">
             &lt; {t("Portfolio")}/&gt;
           </div>
           <div className="row m-3 pb-5 justify-center mt-5">

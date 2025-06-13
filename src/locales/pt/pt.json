@@ -2,38 +2,76 @@
   "translation": {
     "Inicio": "Início",
     "Sobre": "Sobre",
-    "Curriculo": "Currículo",
+    "Curriculo": "Experiência Profissional",
     "Portfolio": "Portfólio",
-    "Contato": "Contato",
-    "Criatividade": "Criatividade",
-    "Liderança": "Liderança",
-    "Pontualidade": "Pontualidade",
-    "Comunicação": "Comunicação",
-    "Compromisso": "Compromisso",
-    "Proatividade": "Proatividade",
-    "Mapa do site": "Mapa do site",
-    "Redes sociais": "Redes sociais",
+    "Skills": "Habilidades",
+    "Formação": "Formação",
+    "Formação description": "Graduada em Sistemas de Informação -",
+    "Formação UFPE": "Universidade Federal de Pernambuco (UFPE)",
     "Todos os direitos reservados": "Todos os direitos reservados",
-    "Projeto TASCOM": "Projeto do site da TASCOM informática",
-    "Saiba mais": "Saiba mais",
-    "Projeto Virttus Energia": "Projeto de simulação de energia",
-    "Consultoria jurídica": "Consultoria jurídica",
-    "Projeto jurídico": "Mockup desenvolvido para uma empresa de consultoria jurídica no ramo de tecnologia.",
-    "Projeto MVT": "Mockup desenvolvido para uma empresa de telecomunicações.",
-    "Projeto Centauro": "Esse projeto foi um desafio desenvolvido para a aplicação em uma vaga. A sua finalidade era calcular a distância entre 2 pontos num plano cartesiano. Os pontos eram as lojas que informavam as 3 mais próximas ao usuário e a distância entre ele e as lojas.",
-    "Visualizar currículo": "Visualizar currículo",
-    "Sobre parte 1": "Olá, meu nome é Thamires, tenho 24 anos e trabalho com desenvolvimento front-end e web design. Comecei meus estudos em Ciência da Computação na UFPE em 2017 e depois migrei para Sistemas de Informação em 2020. Meu foco principal é em tecnologias como ReactJS e Svelte.",
-    "Sobre parte 2": "Nos meus tempos livres, gosto de ler, jogar, fotografar, sair com amigos e viajar. Essas atividades me ajudam a relaxar e trazem novas ideias para o meu trabalho.",
-    "Sobre parte 3": "Estou sempre aprendendo e buscando novos desafios na minha área, com o objetivo de melhorar minhas habilidades e contribuir de forma significativa nos projetos em que trabalho.",
-    "Consultoria Juridica": "Consultoria Jurídica",
-    "texto Centauro": "Esse projeto foi um desafio desenvolvido para a aplicação em uma vaga. A sua finalidade era calcular a distância entre 2 pontos num plano cartesiano. Os pontos eram as lojas que informavam as 3 mais próximas ao usuário e a distância entre ele e as lojas.",
-    "texto MVTelecom": "Mockup da proposta de rebranding do site da MvTelecom.",
-    "texto consultoria": "Mockup desenvolvido para uma empresa de consultoria jurídica voltada para tecnologia.",
-    "texto Eduardo": "Projeto do portfólio de Eduardo. Em desenvolvimento.",
-    "texto inove": "Projeto do portfólio da agência Inove Recife.",
-    "texto Virttus": "Projeto de simulação de energia",
-    "Virttus Energia": "Virttus Energia",
-    "Portfolio Eduardo": "Portfolio Eduardo",
-    "Portfolio Agência Inove": "Portfolio Agência Inove"
+    "Sobre parte 1": "Desenvolvedora front-end com ampla experiência em tecnologias modernas de desenvolvimento web, como JavaScript, TypeScript, React, Svelte, Vue e Lit. Tenho uma forte paixão por UI/UX, garantindo que cada interface que desenvolvo não apenas atenda aos padrões técnicos, mas também proporcione uma experiência de usuário fluida. Minha carreira tem sido focada na criação de interfaces eficientes e escaláveis, com ênfase na padronização e manutenção de design systems. Além disso, possuo experiência em ambientes complexos, como SAPUI5 e WordPress, entregando projetos robustos e integrados.",
+    "projeto_incrivel": "Tem um <span class=\"highlight\">Projeto Incrível</span><br />em mente? <span class=\"highlight-alt\">Vamos conversar</span>",
+    "inicio": {
+      "hello": "Olá!",
+      "im": "Eu sou",
+      "role": "Engenheira de Software Front-end",
+      "years": "8 anos",
+      "experience": "de experiência"
+    },
+    "curriculo": {
+      "download": "Visualizar currículo",
+      "link curriculo": "/CV-Thamires-Morais.pdf",
+      "title": "Experiência profissional",
+      "work_experience": [
+        {
+          "company": "Neoway",
+          "position": "Desenvolvedora Frontend",
+          "date": "Mai 2024",
+          "description": "Como desenvolvedora front-end, atuo no desenvolvimento de um design system robusto utilizando Lit, com foco em acessibilidade e experiência do usuário. Trabalho na manutenção da biblioteca de componentes da empresa, oferecendo soluções reutilizáveis e práticas para facilitar o trabalho dos desenvolvedores. Além disso, utilizo Vue.js em outros projetos para criar interfaces eficientes e integradas."
+        },
+        {
+          "company": "Dione",
+          "position": "Desenvolvedora Frontend",
+          "date": "Mar 2023 - Mai 2024",
+          "description": "Como desenvolvedora sênior, trabalhei com ReactJS e Svelte no desenvolvimento de interfaces interativas, aplicando as melhores práticas de design para criar experiências envolventes. Também gerenciei uma equipe de desenvolvedores juniores, fornecendo suporte e orientação técnica para garantir a qualidade e eficiência dos projetos."
+        },
+        {
+          "company": "Avanade",
+          "position": "Desenvolvedora Frontend Pleno",
+          "date": "Jun 2021 - Fev 2023",
+          "description": "Utilizei SAPUI5 para o desenvolvimento de aplicações empresariais robustas, FIORI para testar e aprimorar a experiência do usuário, além de implementar práticas de DEVOPS para garantir a qualidade e eficiência do processo de desenvolvimento."
+        },
+        {
+          "company": "Tascom",
+          "position": "Desenvolvedora Frontend Júnior",
+          "date": "Jan 2021 - Jun 2021",
+          "description": "Trabalhei com ReactJS, utilizando metodologias ágeis e ferramentas como Trello para gerenciamento de projetos no formato Kanban. Também realizei trabalhos de design utilizando Photoshop e Figma para criar interfaces de usuário (UI) e experiência do usuário (UX)."
+        },
+        {
+          "company": "HAUT",
+          "position": "Frontend Developer & UI/UX (Estágio)",
+          "date": "Jun 2020 - Jan 2021",
+          "description": "Durante meu estágio, aprimorei habilidades em ReactJS e desenvolvimento de protótipos utilizando Figma, aplicando conceitos de UI e UX na criação de interfaces intuitivas e atrativas."
+        },
+        {
+          "company": "UFPE",
+          "position": "Frontend Developer & UI/UX (Bolsista)",
+          "date": "Jan 2018 - Mai 2023",
+          "description": "Atuei como bolsista da UFPE, desempenhando papel importante no desenvolvimento front-end e web design. Fui responsável por criar interfaces interativas e responsivas, utilizando HTML, CSS e JavaScript, além de desenvolver estratégias de UX para proporcionar uma experiência de usuário de qualidade."
+        }
+      ]
+    },
+    "footer": {
+      "connect": "Vamos conectar",
+      "description": "Desenvolvendo interfaces que facilitam o dia a dia de quem usa e de quem mantém. Se tiver um projeto legal, vamos conversar.",
+      "navigation": "Navegação",
+      "home": "Início",
+      "about": "Sobre",
+      "service": "Serviço",
+      "resume": "Currículo",
+      "project": "Projeto",
+      "contact": "Contato",
+      "copyright": "Copyright© 2025. Todos os direitos reservados."
+    }
   }
 }

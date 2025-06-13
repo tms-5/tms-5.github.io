@@ -1,52 +1,48 @@
-import React from "react";
-import Email from "./Email.js";
-import Insta from "./Insta.js";
-import Linkedin from "./Linkedin.js";
-import Whats from "./Whats.js";
 import "./Contato.css";
 import "./Contato.scss";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Contato() {
   const { t } = useTranslation();
 
   return (
-    <div
-      className="bg-black font-barlow text-center h-100v d-grid"
-      id="Contato"
-    >
-      <div className="centralizar-meio">
-        <div className="text-start c-white m-auto" style={{ width: "82%" }}>
-          <div className="c-white f-2 text-center mb-5">
-            &lt; {t("Contato")}/&gt;
-          </div>
-          <div className="row m-auto text-center pt-5">
-            <div className="col mt-1" style={{ minWidth: "65px" }}>
-              <a
-                href="https://api.whatsapp.com/send?phone=5581997350799"
-                target="_blank"
-              >
-                <Whats />
-              </a>
+    <>
+      <div class="container-tech-banner">
+        <div className="tech-banner">
+          <div className="tech-track">
+            <div className="tech-text">
+              React ★ Vue ★ Svelte ★ TypeScript ★ Lit ★ JavaScript ★ CSS ★ Sass
+              ★ HTML ★ Lit ★ Tailwind CSS ★ &nbsp;
             </div>
-            <div className="col mt-1" style={{ minWidth: "65px" }}>
-              <a href="https://www.linkedin.com/in/tms5/" target="_blank">
-                <Linkedin />
-              </a>
-            </div>
-            <div className="col mt-1" style={{ minWidth: "65px" }}>
-              <a href="https://www.instagram.com/thamsjobs/" target="_blank">
-                <Insta />
-              </a>
-            </div>
-            <div className="col mt-1" style={{ minWidth: "65px" }}>
-              <a href="mailto:thamiiresmorais2@gmail.com" target="_blank">
-                <Email />
-              </a>
+            <div className="tech-text">
+              React ★ Vue ★ Svelte ★ TypeScript ★ Lit ★ JavaScript ★ CSS ★ Sass
+              ★ HTML ★ Lit ★ Tailwind CSS ★&nbsp;
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="bg-gray font-barlow text-center d-grid" id="Contato">
+        <div className="container d-flex flex-column align-items-center justify-content-center g-2 p-3">
+          <section className="contact-section">
+            <div className="contact-box">
+              <h2>
+                <Trans
+                  i18nKey="projeto_incrivel"
+                  components={{ span: <span />, br: <br /> }}
+                />
+              </h2>
+              <a
+                href="https://www.linkedin.com/in/tms5"
+                target="_blank"
+                rel="noreferrer"
+                className="linkedin-btn"
+              >
+                Linkedin
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </>
   );
 }
