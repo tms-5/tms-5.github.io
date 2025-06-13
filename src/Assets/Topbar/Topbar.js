@@ -5,12 +5,15 @@ import MobileMenu from "./Components/MobileMenu";
 
 export default function Topbar() {
   const [activeIndex, setActiveIndex] = useState("0");
-  const topics = React.useMemo(() => [
-    { name: "Inicio", index: "0", href: "#Inicio" },
-    { name: "Curriculo", index: "1", href: "#Curriculo" },
-    { name: "Sobre", index: "2", href: "#Sobre" },
-    { name: "Skills", index: "3", href: "#Skills" },
-  ], []);
+  const topics = React.useMemo(
+    () => [
+      { name: "Inicio", index: "0", href: "#Inicio" },
+      { name: "Curriculo", index: "1", href: "#Curriculo" },
+      { name: "Sobre", index: "2", href: "#Sobre" },
+      { name: "Skills", index: "3", href: "#Skills" },
+    ],
+    []
+  );
   const [menuDesktop, setMenuDesktop] = useState(true);
 
   function handleResize() {
@@ -25,11 +28,19 @@ export default function Topbar() {
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     handleResize();
+    if (!window.location.hash || window.location.hash === "#") {
+      window.location.hash = "#Inicio";
+      window.scrollTo(0, 0);
+    }
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
     function onScroll() {
+      if (window.scrollY === 0) {
+        setActiveIndex("0");
+        return;
+      }
       const sectionIds = topics.map((t) => t.href.replace("#", ""));
       let maxPercent = 0;
       let active = "0";
