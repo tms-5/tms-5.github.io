@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const topBarRedux = createSlice({
   name: "0",
   initialState: {
-    language: "PT",
+    language: "EN",
   },
   reducers: {
     changeLanguage: (state, action) => {

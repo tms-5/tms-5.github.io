@@ -164,7 +164,7 @@
 .show {
     opacity: 1;
     visibility: visible;
-    height: 100%;
+    height: auto;
     padding-bottom: 2rem;
 }
 
@@ -172,7 +172,7 @@
     width: 100%;
     display: flex;
     border-radius: 50px;
-    background-color: #171717;
+    background-color: #a58ebf;
     padding: 14px;
     height: 65px;
     overflow: hidden;

@@ -22,42 +22,182 @@
       "download": "View Resume",
       "link curriculo": "/CV-Thamires-Morais.pdf",
       "title": "Professional Experience",
+      "skills_more": "+{{count}}",
+      "skills_less": "Show less",
+      "skills_show_more_aria": "Show {{count}} more skills",
+      "skills_show_less_aria": "Show fewer skills",
       "work_experience": [
         {
-          "company": "Neoway",
-          "position": "Frontend Developer",
-          "date": "May 2024",
-          "description": "As a front-end developer, I work on developing a robust design system using Lit, focusing on accessibility and user experience. I maintain the company's component library, providing reusable and practical solutions to facilitate developers' work. Additionally, I use Vue.js in other projects to create efficient and integrated interfaces."
+          "company": "Trillia",
+          "position": "Frontend Engineer",
+          "meta": "Trillia · Full-time",
+          "date": "May 2024 – Present · 2 yrs",
+          "location": "Remote",
+          "topics": [
+            "Developing a robust design system using LitElement, with a strong emphasis on accessibility and user experience, ensuring compliance with WCAG standards.",
+            "Maintaining and enhancing the company’s component library, delivering reusable and efficient solutions to streamline developers’ workflows.",
+            "Collaborating closely with a technical lead to strategically plan and implement scalable solutions for the design system.",
+            "Utilizing tools and frameworks such as Jira, Open WC, and Jest to manage tasks, test components, and ensure high-quality deliverables.",
+            "Leveraging Vue.js in additional projects to build efficient, integrated interfaces that align with the company’s goals.",
+            "Driving accessibility initiatives, embedding WCAG patterns into the design system to provide inclusive experiences for all users.",
+            "Focusing on developer support, creating comprehensive documentation and practical tools to enhance adoption and productivity across teams."
+          ],
+          "skills": [
+            "Design system",
+            "Lit",
+            "Vue.js",
+            "WCAG",
+            "LitElement",
+            "Jira",
+            "Open WC",
+            "Playwright",
+            "Jest",
+            "Accessibility",
+            "Web Components",
+            "ReactJs",
+            "AngularJS",
+            "UX",
+            "TypeScript",
+            "JavaScript",
+            "Storybook",
+            "Figma",
+            "GitLab",
+            "SASS"
+          ]
         },
         {
           "company": "Dione",
           "position": "Frontend Developer",
-          "date": "Mar 2023 - May 2024",
-          "description": "As a senior developer, I worked with ReactJS and Svelte in developing interactive interfaces, applying best design practices to create engaging experiences. I also managed a team of junior developers, providing support and technical guidance to ensure project quality and efficiency."
+          "meta": "Dione · Full-time",
+          "date": "Mar 2023 – May 2024 · 1 yr 3 mos",
+          "topics": [
+            "Led the front-end team as a Senior Developer, overseeing the development of interactive interfaces using ReactJS and Svelte, while applying the best design practices to deliver engaging user experiences.",
+            "Managed and mentored a team of junior and mid-level developers, providing technical guidance, fostering collaboration, and ensuring the quality and efficiency of all deliverables.",
+            "Made strategic decisions regarding system architecture and front-end development, ensuring scalability, maintainability, and alignment with project goals.",
+            "Utilized Jest to write and maintain comprehensive unit and integration tests, improving the reliability and stability of the application.",
+            "Prioritized accessibility, implementing features and designs that adhered to WCAG standards, ensuring inclusive user experiences for all users.",
+            "Developed data visualizations and custom charts, leveraging modern libraries and frameworks to communicate complex data in a clear and intuitive way.",
+            "Collaborated closely with cross-functional teams to align front-end deliverables with back-end systems, business requirements, and user expectations."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "Svelte",
+            "Jest",
+            "WCAG",
+            "Leadership",
+            "Mentoring",
+            "Architecture",
+            "Data visualization",
+            "TypeScript",
+            "JavaScript",
+            "CSS",
+            "Git",
+            "Agile",
+            "Charts"
+          ]
+        },
+        {
+          "company": "Universidade Federal de Pernambuco",
+          "position": "Frontend Developer",
+          "meta": "Universidade Federal de Pernambuco · Freelance",
+          "date": "Jan 2018 – May 2023 · 5 yrs 5 mos",
+          "topics": [
+            "Collaborated as a UFPE fellow in the Reciprev project in partnership with Recife City Hall, focusing on front-end development and web design.",
+            "Solely responsible for the creation, development, and ongoing support of the application, from initial design to final implementation.",
+            "Designed and implemented interactive and responsive interfaces, applying best design practices and modern front-end technologies, including HTML, CSS, and JavaScript.",
+            "Contributed to the planning and execution of UX strategies, ensuring a high-quality user experience aligned with project goals.",
+            "Worked closely with a multidisciplinary team to integrate functional and aesthetic aspects into cohesive, user-friendly solutions."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "JavaScript",
+            "CSS",
+            "UX",
+            "Web design",
+            "Responsive design",
+            "Collaboration",
+            "Figma",
+            "Government projects",
+            "Multidisciplinary teams"
+          ]
         },
         {
           "company": "Avanade",
-          "position": "Mid-level Frontend Developer",
-          "date": "Jun 2021 - Feb 2023",
-          "description": "I used SAPUI5 for the development of robust enterprise applications, FIORI to test and improve user experience, and implemented DEVOPS practices to ensure the quality and efficiency of the development process."
+          "position": "Frontend Developer",
+          "meta": "Avanade · Full-time",
+          "date": "Jun 2021 – Feb 2023 · 1 yr 9 mos",
+          "linkedinNote": "LinkedIn helped me get this job.",
+          "topics": [
+            "Developed robust enterprise applications using SAPUI5, tailored to meet specific business needs.",
+            "Used FIORI to test usability and enhance the user experience in critical interfaces.",
+            "Contributed to a project using ReactJS, focusing on bug fixes and implementing functional improvements.",
+            "Implemented DevOps practices, including continuous integration and delivery, to ensure quality and efficiency in the development cycle.",
+            "Collaborated with cross-functional teams to align technical and functional requirements, delivering high-impact solutions for the client."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "SAPUI5",
+            "FIORI",
+            "DevOps",
+            "CI/CD",
+            "JavaScript",
+            "Enterprise",
+            "Agile"
+          ]
         },
         {
-          "company": "Tascom",
-          "position": "Junior Frontend Developer",
-          "date": "Jan 2021 - Jun 2021",
-          "description": "I worked with ReactJS, using agile methodologies and tools like Trello for project management in Kanban format. I also performed design work using Photoshop and Figma to create user interfaces (UI) and user experience (UX)."
+          "company": "Tascom • Health Technology",
+          "position": "Frontend Developer",
+          "meta": "Tascom • Health Technology · Part-time",
+          "date": "Jan 2021 – Jun 2021 · 6 mos",
+          "topics": [
+            "Worked with ReactJS in projects following agile methodologies.",
+            "Managed tasks and workflows using the Kanban format with tools like Trello.",
+            "Designed user interfaces (UI) and user experiences (UX) using Photoshop and Figma.",
+            "Collaborated on creating visual and functional solutions aligned with client needs."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "Agile",
+            "Kanban",
+            "Trello",
+            "Photoshop",
+            "Figma",
+            "UI",
+            "UX",
+            "JavaScript",
+            "CSS",
+            "Collaboration"
+          ]
         },
         {
           "company": "HAUT",
-          "position": "Frontend Developer & UI/UX (Internship)",
-          "date": "Jun 2020 - Jan 2021",
-          "description": "During my internship, I improved my skills in ReactJS and prototype development using Figma, applying UI and UX concepts in creating intuitive and attractive interfaces."
-        },
-        {
-          "company": "UFPE",
-          "position": "Frontend Developer & UI/UX (Scholarship Holder)",
-          "date": "Jan 2018 - May 2023",
-          "description": "I worked as a UFPE scholarship holder, playing an important role in front-end development and web design. I was responsible for creating interactive and responsive interfaces using HTML, CSS, and JavaScript, as well as developing UX strategies to provide a quality user experience."
+          "position": "Frontend Developer",
+          "meta": "HAUT | Incorporadora Design · Internship",
+          "date": "Jun 2020 – Jan 2021 · 8 mos",
+          "linkedinNote": "LinkedIn helped me get this job.",
+          "topics": [
+            "Enhanced skills in ReactJS and prototype development using Figma.",
+            "Applied UI/UX principles to design intuitive and visually appealing interfaces.",
+            "Collaborated on the design and development of functional prototypes for idea validation.",
+            "Created interactive solutions aligned with end-user needs."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "Figma",
+            "UI/UX",
+            "Prototyping",
+            "JavaScript",
+            "CSS",
+            "Design",
+            "Collaboration",
+            "Agile learning"
+          ]
         }
       ]
     },

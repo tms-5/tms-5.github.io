@@ -40,7 +40,7 @@ function ScrollLoader({ children, fallback = null }) {
 
 export default function Index() {
   return (
-    <div className="">
+    <div className="page-group">
       <Suspense fallback={null}>
         <Topbar />
       </Suspense>

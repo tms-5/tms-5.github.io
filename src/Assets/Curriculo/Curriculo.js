@@ -24,10 +24,17 @@ export default function Curriculo() {
             <TimeLine
               key={index}
               index={index === WorkExperience.length - 1 ? -1 : index}
+              isLast={index === WorkExperience.length - 1}
               company={item.company}
               position={item.position}
               date={item.date}
               description={item.description}
+              meta={item.meta}
+              location={item.location}
+              topics={item.topics}
+              skills={item.skills}
+              linkedinNote={item.linkedinNote}
+              skillsPreviewCount={item.skillsPreviewCount ?? 2}
             />
           ))}
           <div className="d-flex flex-column align-items-center justify-content-center button-curriculo">
