@@ -8,7 +8,7 @@ export default function Curriculo() {
   const lang = i18n.language;
 
   const pdfPath =
-    lang === "en"
+    lang === "EN"
       ? "/CV/Resume-Thamires-Morais.pdf"
       : "/CV/CV-Thamires-Morais.pdf";
 
