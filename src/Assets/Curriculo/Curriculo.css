@@ -1,0 +1,222 @@
+/* Avoid overflow:hidden here — it clips timeline text and animated translateY content */
+#Curriculo .container.d-flex {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.timeline-container {
+    align-self: stretch;
+    min-height: 0;
+    overflow: visible;
+    justify-items: center;
+    min-width: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-circle {
+    border-radius: 50%;
+    border: 2px dashed black;
+    pointer-events: none;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    width: 40px;
+}
+
+.timeline-circle.even svg {
+    fill: #3E0052;
+}
+
+.timeline-circle.odd svg {
+    fill: #1D2939;
+}
+
+.timeline-dashed-line {
+    justify-self: center;
+    border-left: 2px dashed black;
+    width: 2px;
+    height: 95%;
+}
+
+.time-line h2,
+.time-line h3 {
+    color: #344054;
+    font-weight: 600;
+}
+
+.time-line p {
+    color: #98A2B3;
+}
+
+.timeline-meta,
+.timeline-location {
+    color: #98A2B3;
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+}
+
+.timeline-meta {
+    margin-top: 0.25rem;
+}
+
+.timeline-linkedin-note {
+    color: #667085;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0.5rem 0 0.75rem;
+}
+
+.timeline-topics {
+    margin: 0.75rem 0 1rem;
+    padding-left: 1.35rem;
+    color: #475467;
+    line-height: 1.55;
+    text-align: left;
+    overflow: visible;
+    list-style: inside;
+}
+
+.timeline-topics li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.35rem;
+}
+
+.timeline-topics li::marker {
+    color: #3E0052;
+    font-size: 1.1em;
+    margin-right: 4px !important;
+}
+
+.timeline-topics li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    align-items: center;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #344054;
+    background: #F9FAFB;
+    border: 1px solid #EAECF0;
+}
+
+.skill-tag-more,
+.skill-tag-less {
+    cursor: pointer;
+    font-family: inherit;
+    border: 1px dashed #98A2B3;
+    background: #fff;
+    color: #475467;
+}
+
+.skill-tag-more:hover,
+.skill-tag-less:hover {
+    border-color: #667085;
+    color: #1D2939;
+}
+
+.skill-tag-less {
+    border-style: solid;
+}
+
+.bp-mobile {
+    display: none;
+}
+
+.time-line {
+    justify-content: space-between;
+    gap: 32px;
+    position: relative;
+    min-height: 0;
+    overflow: visible;
+}
+
+.timeline-description {
+    width: 50%;
+    min-width: 0;
+    overflow: visible;
+}
+
+.button-curriculo {
+
+    height: 263px;
+}
+
+.button-curriculo a {
+    background-color: #3E0052;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.time-line-group {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    justify-content: center;
+}
+
+/* Último cargo: o botão do PDF é o last-child do flex, então :last-child no group não funcionava */
+.time-line-group--last .timeline-dashed-line {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .bp-desktop {
+        display: none;
+    }
+
+    .bp-mobile {
+        display: block;
+    }
+
+    .timeline-description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .time-line {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+}
+/* Fade-only entrance avoids transform + overflow clipping first lines of text */
+.animate-timeline {
+    opacity: 0;
+    transition: none;
+    will-change: opacity;
+}
+
+.animate-timeline.visible {
+    animation: fadeInTimeline 0.7s ease-out forwards;
+}
+
+@keyframes fadeInTimeline {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

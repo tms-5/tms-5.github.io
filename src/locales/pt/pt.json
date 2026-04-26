@@ -1,0 +1,217 @@
+{
+  "translation": {
+    "Inicio": "Início",
+    "Sobre": "Sobre",
+    "Curriculo": "Experiência Profissional",
+    "Portfolio": "Portfólio",
+    "Skills": "Habilidades",
+    "Formação": "Formação",
+    "Formação description": "Graduada em Sistemas de Informação -",
+    "Formação UFPE": "Universidade Federal de Pernambuco (UFPE)",
+    "Todos os direitos reservados": "Todos os direitos reservados",
+    "Sobre parte 1": "Desenvolvedora front-end com ampla experiência em tecnologias modernas de desenvolvimento web, como JavaScript, TypeScript, React, Svelte, Vue e Lit. Tenho uma forte paixão por UI/UX, garantindo que cada interface que desenvolvo não apenas atenda aos padrões técnicos, mas também proporcione uma experiência de usuário fluida. Minha carreira tem sido focada na criação de interfaces eficientes e escaláveis, com ênfase na padronização e manutenção de design systems. Além disso, possuo experiência em ambientes complexos, como SAPUI5 e WordPress, entregando projetos robustos e integrados.",
+    "projeto_incrivel": "Tem um <span class=\"highlight\">Projeto Incrível</span><br />em mente? <span class=\"highlight-alt\">Vamos conversar</span>",
+    "inicio": {
+      "hello": "Olá!",
+      "im": "Eu sou",
+      "role": "Engenheira de Software Front-end",
+      "years": "8 anos",
+      "experience": "de experiência"
+    },
+    "curriculo": {
+      "download": "Visualizar currículo",
+      "link curriculo": "/CV-Thamires-Morais.pdf",
+      "title": "Experiência profissional",
+      "skills_more": "+{{count}}",
+      "skills_less": "Mostrar menos",
+      "skills_show_more_aria": "Mostrar mais {{count}} competências",
+      "skills_show_less_aria": "Mostrar menos competências",
+      "work_experience": [
+        {
+          "company": "Trillia",
+          "position": "Engenheira frontend",
+          "meta": "Trillia · Tempo integral",
+          "date": "Mai de 2024 – o momento · 2 anos",
+          "location": "Remoto",
+          "topics": [
+            "Desenvolvimento de um design system robusto com LitElement, com forte ênfase em acessibilidade e experiência do usuário, garantindo conformidade com as diretrizes WCAG.",
+            "Manutenção e evolução da biblioteca de componentes da empresa, entregando soluções reutilizáveis e eficientes para agilizar o trabalho das pessoas desenvolvedoras.",
+            "Colaboração próxima com a liderança técnica para planejar e implementar soluções escaláveis para o design system.",
+            "Uso de ferramentas e frameworks como Jira, Open WC e Jest para gerenciar tarefas, testar componentes e garantir entregas de alta qualidade.",
+            "Uso de Vue.js em projetos adicionais para construir interfaces eficientes e integradas, alinhadas aos objetivos da empresa.",
+            "Condução de iniciativas de acessibilidade, incorporando padrões WCAG ao design system para oferecer experiências inclusivas.",
+            "Foco em suporte às pessoas desenvolvedoras, com documentação abrangente e ferramentas práticas para aumentar adoção e produtividade entre os times."
+          ],
+          "skills": [
+            "Design system",
+            "Lit",
+            "Vue.js",
+            "WCAG",
+            "LitElement",
+            "Jira",
+            "Open WC",
+            "Playwright",
+            "Jest",
+            "Accessibility",
+            "Web Components",
+            "ReactJs",
+            "AngularJS",
+            "UX",
+            "TypeScript",
+            "JavaScript",
+            "Storybook",
+            "Figma",
+            "GitLab",
+            "SASS"
+          ]
+        },
+        {
+          "company": "Dione",
+          "position": "Desenvolvedora frontend",
+          "meta": "Dione · Tempo integral",
+          "date": "Mar de 2023 – Mai de 2024 · 1 ano 3 meses",
+          "topics": [
+            "Liderança do time de front-end como desenvolvedora sênior, conduzindo interfaces interativas com ReactJS e Svelte e aplicando boas práticas de design.",
+            "Gestão e mentoria de desenvolvedoras e desenvolvedores júnior e pleno, com orientação técnica, colaboração e qualidade das entregas.",
+            "Decisões estratégicas sobre arquitetura e desenvolvimento front-end, com foco em escalabilidade, manutenção e alinhamento aos objetivos do projeto.",
+            "Uso de Jest para testes unitários e de integração, aumentando confiabilidade e estabilidade da aplicação.",
+            "Priorização de acessibilidade, com recursos e designs alinhados ao WCAG e experiências inclusivas.",
+            "Desenvolvimento de visualizações de dados e gráficos customizados com bibliotecas modernas para comunicar dados complexos de forma clara.",
+            "Colaboração com times multidisciplinares para alinhar entregas de front-end a back-end, regras de negócio e expectativas de usuário."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "Svelte",
+            "Jest",
+            "WCAG",
+            "Liderança",
+            "Mentoria",
+            "Arquitetura",
+            "Visualização de dados",
+            "TypeScript",
+            "JavaScript",
+            "CSS",
+            "Git",
+            "Agile",
+            "Gráficos"
+          ]
+        },
+        {
+          "company": "Universidade Federal de Pernambuco",
+          "position": "Desenvolvedora frontend",
+          "meta": "Universidade Federal de Pernambuco · Freelance",
+          "date": "Jan de 2018 – Mai de 2023 · 5 anos 5 meses",
+          "topics": [
+            "Atuação como bolsista da UFPE no projeto Reciprev em parceria com a Prefeitura do Recife, com foco em desenvolvimento front-end e web design.",
+            "Responsabilidade pela criação, desenvolvimento e suporte contínuo da aplicação, do desenho inicial à implementação final.",
+            "Interfaces interativas e responsivas, com boas práticas de design e tecnologias modernas, incluindo HTML, CSS e JavaScript.",
+            "Contribuição no planejamento e execução de estratégias de UX, alinhadas aos objetivos do projeto.",
+            "Trabalho em equipe multidisciplinar para integrar aspectos funcionais e estéticos em soluções coesas e amigáveis."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "JavaScript",
+            "CSS",
+            "UX",
+            "Web design",
+            "Design responsivo",
+            "Colaboração",
+            "Figma",
+            "Projetos públicos",
+            "Equipes multidisciplinares"
+          ]
+        },
+        {
+          "company": "Avanade",
+          "position": "Desenvolvedora frontend",
+          "meta": "Avanade · Tempo integral",
+          "date": "Jun de 2021 – Fev de 2023 · 1 ano 9 meses",
+          "linkedinNote": "O LinkedIn me ajudou a conseguir este emprego.",
+          "topics": [
+            "Desenvolvimento de aplicações empresariais robustas com SAPUI5, sob medida para necessidades de negócio.",
+            "Uso de FIORI para testar usabilidade e melhorar a experiência do usuário em interfaces críticas.",
+            "Contribuição em projeto com ReactJS, com correções de bugs e melhorias funcionais.",
+            "Práticas de DevOps, incluindo integração e entrega contínuas, para qualidade e eficiência no ciclo de desenvolvimento.",
+            "Colaboração com times multifuncionais para alinhar requisitos técnicos e funcionais e entregar soluções de alto impacto ao cliente."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "SAPUI5",
+            "FIORI",
+            "DevOps",
+            "CI/CD",
+            "JavaScript",
+            "Enterprise",
+            "Agile"
+          ]
+        },
+        {
+          "company": "Tascom • Tecnologia em Saúde",
+          "position": "Desenvolvedora frontend",
+          "meta": "Tascom • Tecnologia em Saúde · Meio período",
+          "date": "Jan de 2021 – Jun de 2021 · 6 meses",
+          "topics": [
+            "Trabalho com ReactJS em projetos com metodologias ágeis.",
+            "Gestão de tarefas e fluxos em Kanban com ferramentas como Trello.",
+            "Design de UI e UX com Photoshop e Figma.",
+            "Colaboração na criação de soluções visuais e funcionais alinhadas às necessidades do cliente."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "Agile",
+            "Kanban",
+            "Trello",
+            "Photoshop",
+            "Figma",
+            "UI",
+            "UX",
+            "JavaScript",
+            "CSS",
+            "Colaboração"
+          ]
+        },
+        {
+          "company": "HAUT",
+          "position": "Desenvolvedora frontend",
+          "meta": "HAUT | Incorporadora Design · Estágio",
+          "date": "Jun de 2020 – Jan de 2021 · 8 meses",
+          "linkedinNote": "O LinkedIn me ajudou a conseguir este emprego.",
+          "topics": [
+            "Aprimoramento de habilidades em ReactJS e prototipação com Figma.",
+            "Aplicação de princípios de UI/UX em interfaces intuitivas e visualmente agradáveis.",
+            "Colaboração no design e desenvolvimento de protótipos funcionais para validação de ideias.",
+            "Criação de soluções interativas alinhadas às necessidades das pessoas usuárias."
+          ],
+          "skills": [
+            "HTML",
+            "React.js",
+            "Figma",
+            "UI/UX",
+            "Prototipação",
+            "JavaScript",
+            "CSS",
+            "Design",
+            "Colaboração",
+            "Aprendizado ágil"
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "connect": "Vamos conectar",
+      "description": "Desenvolvendo interfaces que facilitam o dia a dia de quem usa e de quem mantém. Se tiver um projeto legal, vamos conversar.",
+      "navigation": "Navegação",
+      "home": "Início",
+      "about": "Sobre",
+      "service": "Serviço",
+      "resume": "Currículo",
+      "project": "Projeto",
+      "contact": "Contato",
+      "copyright": "Copyright© 2025. Todos os direitos reservados."
+    }
+  }
+}
