@@ -12,11 +12,15 @@
     "Sobre parte 1": "Front-end developer with extensive experience in modern web development technologies such as JavaScript, TypeScript, React, Svelte, Vue, and Lit. I have a strong passion for UI/UX, ensuring that every interface I develop not only meets technical standards but also provides a seamless user experience. My career has been focused on creating efficient and scalable interfaces, with an emphasis on standardization and maintenance of design systems. Additionally, I have experience in complex environments such as SAPUI5 and WordPress, delivering robust and integrated projects.",
     "projeto_incrivel": "Do you have an <span class=\"highlight\">Amazing Project</span><br />in mind? <span class=\"highlight-alt\">Let's talk</span>",
     "inicio": {
-      "hello": "Hello!",
+      "hello": "Hello! I'm",
       "im": "I'm",
       "role": "Front-end Software Engineer",
       "years": "8 years",
-      "experience": "of experience"
+      "experience": "of experience",
+      "headline": "I build fast, scalable front-end experiences that <span>users love.</span>",
+      "description": "Front-end Software Engineer with 8+ years of experience building modern web applications with clean code, performance and great user experience.",
+      "view_projects": "View Projects",
+      "view_cv": "View CV"
     },
     "curriculo": {
       "download": "View Resume",
@@ -24,6 +28,8 @@
       "title": "Professional Experience",
       "skills_more": "+{{count}}",
       "skills_less": "Show less",
+      "see_more": "See more",
+      "see_less": "Show less",
       "skills_show_more_aria": "Show {{count}} more skills",
       "skills_show_less_aria": "Show fewer skills",
       "work_experience": [
@@ -199,7 +205,8 @@
             "Agile learning"
           ]
         }
-      ]
+      ],
+      "eyebrow": "Experience"
     },
     "footer": {
       "connect": "Let's connect",
@@ -212,6 +219,62 @@
       "project": "Project",
       "contact": "Contact",
       "copyright": "Copyright© 2025. All rights reserved."
+    },
+    "about": {
+      "eyebrow": "About me",
+      "title": "I turn ideas into <span>beautiful</span> interfaces.",
+      "strengths": {
+        "problem_solver": {
+          "title": "Problem Solver",
+          "text": "I enjoy turning complex challenges into simple and intuitive solutions."
+        },
+        "detail_oriented": {
+          "title": "Detail Oriented",
+          "text": "I focus on the details that make a big difference."
+        },
+        "always_learning": {
+          "title": "Always Learning",
+          "text": "I'm constantly exploring new tools and improving my skills."
+        }
+      }
+    },
+    "portfolio": {
+      "eyebrow": "Featured projects",
+      "view_site": "View site",
+      "code": "Code",
+      "open_project": "Open {{project}}",
+      "project_preview": "{{project}} preview",
+      "tags_aria": "{{project}} technologies",
+      "projects": {
+        "edu_p": {
+          "description": "Personal portfolio built with Vue, TypeScript and Tailwind CSS.",
+          "features": []
+        },
+        "agile_daily": {
+          "description": "A lightweight daily meeting facilitator for agile teams, built in Vue.js with localStorage persistence and no backend dependency.",
+          "features": [
+            "Team and member management",
+            "Automatic localStorage persistence",
+            "Participant timer with skip and next controls"
+          ]
+        }
+      }
+    },
+    "skills": {
+      "previous_page": "Previous skills page",
+      "next_page": "Next skills page",
+      "areas": {
+        "development": "Development",
+        "design": "Design",
+        "workflow": "Workflow"
+      }
+    },
+    "nav": {
+      "aria": "Primary navigation",
+      "brand_aria": "Thamires Morais home",
+      "open_menu": "Open menu",
+      "close_menu": "Close menu",
+      "change_language": "Change language to {{language}}"
     }
   }
 }

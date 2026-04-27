@@ -1,30 +1,26 @@
 import "./Curriculo.css";
 import TimeLine from "./TimeLine";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export default function Curriculo() {
-  const { t, i18n } = useTranslation();
-
-  const lang = i18n.language;
-
-  const pdfPath =
-    lang === "EN"
-      ? "/CV/Resume-Thamires-Morais.pdf"
-      : "/CV/CV-Thamires-Morais.pdf";
+  const { t } = useTranslation();
+  const [showAll, setShowAll] = useState(false);
 
   const WorkExperience =
     t("curriculo.work_experience", { returnObjects: true }) || [];
+  const visibleExperience = showAll ? WorkExperience : WorkExperience.slice(0, 2);
 
   return (
-    <div className="bg-gray font-barlow text-center d-grid" id="Curriculo">
-      <div className="container d-flex flex-column align-items-center justify-content-center g-2 p-3">
-        <h2>{t("curriculo.title")}</h2>
+    <section className="experience-section container" id="Curriculo">
+      <div className="section-card experience-card-section">
+        <p className="section-eyebrow">{t("curriculo.eyebrow")}</p>
         <div className="d-flex flex-column align-items-center">
-          {WorkExperience.map((item, index) => (
+          {visibleExperience.map((item, index) => (
             <TimeLine
               key={index}
-              index={index === WorkExperience.length - 1 ? -1 : index}
-              isLast={index === WorkExperience.length - 1}
+              index={index === visibleExperience.length - 1 ? -1 : index}
+              isLast={index === visibleExperience.length - 1}
               company={item.company}
               position={item.position}
               date={item.date}
@@ -37,18 +33,18 @@ export default function Curriculo() {
               skillsPreviewCount={item.skillsPreviewCount ?? 2}
             />
           ))}
-          <div className="d-flex flex-column align-items-center justify-content-center button-curriculo">
-            <a
-              href={pdfPath}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
+          {WorkExperience.length > 2 ? (
+            <button
+              className="experience-more-button"
+              type="button"
+              onClick={() => setShowAll((value) => !value)}
+              aria-expanded={showAll}
             >
-              {t("curriculo.download")}
-            </a>
-          </div>
+              {showAll ? t("curriculo.see_less") : t("curriculo.see_more")}
+            </button>
+          ) : null}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -145,3 +145,8 @@ code {
     max-width: 1320px;
   }
 }
+
+a:hover {
+    color: undefined;
+    text-decoration: underline;
+}

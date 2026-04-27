@@ -49,8 +49,8 @@ export default function TimeLine({
     <div
       ref={ref}
       className={`time-line-group font-barlow d-flex align-start animate-timeline ${visible ? 'visible' : ''} ${isLast ? 'time-line-group--last' : ''}`}>
-      <div className='time-line font-barlow d-flex align-start'>
-        <div className='text-right w-50 bp-desktop'>
+      <div className='time-line font-barlow align-start'>
+        <div className='text-right bp-desktop'>
           <h2>{position}</h2>
           <p>{date}</p>
         </div>
@@ -71,8 +71,8 @@ export default function TimeLine({
           </div>
           <div className='text-left w-100 pb-2r'>
             {(meta || location) ? (
-              <p className='timeline-meta'>
-                {meta}
+              <p className='timeline-meta fw-700'>
+                <span className='timeline-meta-text'>{meta}</span>
                 {meta && location ? ' · ' : ''}
                 <span className='timeline-location'>{location}</span>
               </p>

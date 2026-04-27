@@ -14,8 +14,16 @@
     justify-content: center;
     gap: 16px;
     min-height: 320px;
-    padding: 50px;
     flex-direction: column;
+}
+
+.skills-carousel-stage {
+    display: grid;
+    padding: 47px;
+    grid-template-columns: 44px minmax(0, auto) 44px;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
 }
 
 .glass-card-puzzle {
@@ -30,7 +38,7 @@
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 24px;
+    padding: 18px;
     gap: 12px;
     position: relative;
 }
@@ -93,21 +101,35 @@
     border-radius: 8px;
 }
 
-.carousel-controls button {
-    background: #fff;
-    border: none;
+.skills-arrow-button {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+    border: 1px solid rgba(62, 0, 82, 0.24);
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    font-size: 1.5rem;
+    background: #fff;
     color: #3E0052;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s, transform 0.2s, opacity 0.2s;
 }
 
-.carousel-controls button:hover {
-    background: #f3e6ff;
+.skills-arrow-button span {
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.skills-arrow-button:hover:not(:disabled) {
+    color: #fff;
+    background: #3E0052;
+    transform: translateY(-1px);
+}
+
+.skills-arrow-button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
 }
 
 .skills-grid {
@@ -234,6 +256,22 @@
     animation: slideOutToLeft 0.4s cubic-bezier(0.77, 0, 0.18, 1) forwards;
 }
 
+@keyframes slideOutToRight {
+    from {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-out-right {
+    animation: slideOutToRight 0.4s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+}
+
 @media screen and (max-width: 768px) {
     .skill-card {
         grid-column: span 2;
@@ -251,6 +289,24 @@
 
     .carousel-container {
         width: 100%;
+    }
+
+    .carousel-controls {
+        padding: 24px 0;
+    }
+
+    .skills-carousel-stage {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .glass-card-puzzle {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .skills-arrow-button {
+        grid-row: 2;
+        justify-self: center;
     }
 }
 

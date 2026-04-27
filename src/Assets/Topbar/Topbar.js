@@ -1,93 +1,107 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./Topbar.css";
-import DesktopMenu from "./Components/DesktopMenu";
-import MobileMenu from "./Components/MobileMenu";
+import ChangeLanguage from "./Components/ChangeLanguage";
+import logo from "../Img/logo-web-png.png";
+import { useTranslation } from "react-i18next";
 
 export default function Topbar() {
-  const [activeIndex, setActiveIndex] = useState("0");
-  const topics = React.useMemo(
+  const { t } = useTranslation();
+  const [activeHref, setActiveHref] = useState("#Inicio");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const topics = useMemo(
     () => [
-      { name: "Inicio", index: "0", href: "#Inicio" },
-      { name: "Curriculo", index: "1", href: "#Curriculo" },
-      { name: "Sobre", index: "2", href: "#Sobre" },
-      { name: "Skills", index: "3", href: "#Skills" },
+      { name: "Inicio", href: "#Inicio" },
+      { name: "Curriculo", href: "#Curriculo" },
+      { name: "Sobre", href: "#Sobre" },
+      { name: "Portfolio", href: "#Portfolio" },
+      { name: "Skills", href: "#Skills" },
+      { name: "Contato", href: "#Contato" },
     ],
     []
   );
-  const [menuDesktop, setMenuDesktop] = useState(true);
-
-  function handleResize() {
-    const width = window.innerWidth;
-    if (width < 920) {
-      setMenuDesktop(false);
-    } else {
-      setMenuDesktop(true);
-    }
-  }
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
     if (!window.location.hash || window.location.hash === "#") {
       window.location.hash = "#Inicio";
       window.scrollTo(0, 0);
     }
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
-    function onScroll() {
-      if (window.scrollY === 0) {
-        setActiveIndex("0");
-        return;
-      }
-      const sectionIds = topics.map((t) => t.href.replace("#", ""));
-      let maxPercent = 0;
-      let active = "0";
-      sectionIds.forEach((id, idx) => {
-        const el = document.getElementById(id);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          const vh =
-            window.innerHeight || document.documentElement.clientHeight;
-          const visible = Math.max(
-            0,
-            Math.min(rect.bottom, vh) - Math.max(rect.top, 0)
-          );
-          const percent = visible / Math.min(rect.height, vh);
-          if (percent > maxPercent) {
-            maxPercent = percent;
-            active = idx.toString();
-          }
+    function updateActiveLink() {
+      let nextActive = "#Inicio";
+      const offsetTop = 140;
+
+      topics.forEach((topic) => {
+        const section = document.querySelector(topic.href);
+        if (!section) return;
+
+        if (section.getBoundingClientRect().top <= offsetTop) {
+          nextActive = topic.href;
         }
       });
-      setActiveIndex(active);
+
+      setActiveHref(nextActive);
     }
 
-    window.addEventListener("scroll", onScroll);
-    onScroll();
+    updateActiveLink();
+    window.addEventListener("scroll", updateActiveLink, { passive: true });
+    window.addEventListener("resize", updateActiveLink);
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", updateActiveLink);
+      window.removeEventListener("resize", updateActiveLink);
+    };
   }, [topics]);
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
-    <div
-      className="bg-topbar justify-s-b p-fixed o-hidden"
-      style={{ zIndex: "100" }}
-    >
-      {menuDesktop ? (
-        <DesktopMenu
-          topics={topics}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-        />
-      ) : (
-        <MobileMenu
-          topics={topics}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-        />
-      )}
-    </div>
+    <header className="portfolio-header">
+      <nav className="portfolio-nav container" aria-label={t("nav.aria")}>
+        <a className="brand-link" href="#Inicio" aria-label={t("nav.brand_aria")} onClick={closeMenu}>
+          <img src={logo} alt="Logo Thamires Morais" width="116" height="36" />
+        </a>
+
+        <div className="mobile-actions">
+          <ChangeLanguage />
+
+          <button
+            className="menu-button"
+            type="button"
+            aria-expanded={isMenuOpen}
+            aria-controls="main-menu"
+            aria-label={isMenuOpen ? t("nav.close_menu") : t("nav.open_menu")}
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <span className={isMenuOpen ? "active" : ""}></span>
+            <span className={isMenuOpen ? "active" : ""}></span>
+            <span className={isMenuOpen ? "active" : ""}></span>
+          </button>
+        </div>
+
+        <div id="main-menu" className={`nav-panel ${isMenuOpen ? "open" : ""}`}>
+          {topics.map((topic) => (
+            <a
+              key={topic.href}
+              className={`nav-link ${activeHref === topic.href ? "active" : ""}`}
+              href={topic.href}
+              aria-current={activeHref === topic.href ? "page" : undefined}
+              onClick={closeMenu}
+            >
+              {t(topic.name)}
+            </a>
+          ))}
+        </div>
+
+        <div className="desktop-actions">
+          <ChangeLanguage />
+          <a className="talk-button" href="#Contato">
+            {t("Contato")}
+          </a>
+        </div>
+      </nav>
+    </header>
   );
 }

@@ -1,43 +1,49 @@
 import { useTranslation } from "react-i18next";
-import profilepic from "../../Assets/Img/IMG_7874.png";
 import "./Sobre.css";
 import ScrollReveal from "../Utilitarios/ScrollReveal";
 
+const strengths = [
+  {
+    titleKey: "about.strengths.problem_solver.title",
+    textKey: "about.strengths.problem_solver.text",
+    icon: "M400-160h160v-160H400v160ZM160-400h160v-160H160v160Zm240 0h160v-160H400v160Zm240 0h160v-160H640v160Zm0-240h160v-160H640v160ZM320-80v-240H80v-320h480v-240h320v560H640v240H320Z",
+  },
+  {
+    titleKey: "about.strengths.detail_oriented.title",
+    textKey: "about.strengths.detail_oriented.text",
+    icon: "M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z",
+  },
+  {
+    titleKey: "about.strengths.always_learning.title",
+    textKey: "about.strengths.always_learning.text",
+    icon: "M260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z",
+  },
+];
+
 export default function Sobre() {
   const { t } = useTranslation();
+
   return (
-    <ScrollReveal
-      className="font-barlow text-center h-100v d-grid p-2 container sobre-section"
-      id="Sobre"
-    >
-      <div className="d-flex text-start w-75 g-2 c-white m-auto">
-        <div className="f-1-2 text-center p-2r p-relative img-sobre h-fit animated-left">
-          <img src={profilepic} alt="Thamires Morais" id="img-2" />
-          <div className="background-pic"></div>
+    <ScrollReveal className="about-section container" id="Sobre">
+      <div className="section-card about-card">
+        <div className="about-heading animated-left">
+          <p className="section-eyebrow">{t("about.eyebrow")}</p>
+          <h2 dangerouslySetInnerHTML={{ __html: t("about.title") }} />
         </div>
-        <div className="animated-right">
-          <div className="c-gray">
-            <h2 className="f-2-5 mb-3">{t("Sobre")}</h2>
-            <p>{t("Sobre parte 1")}</p>
-          </div>
-          <div className="formacao mt-3 text-start">
-            <h4 className="formacao-titulo f-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="32px"
-                viewBox="0 -960 960 960"
-                width="32px"
-                fill="#3E0052"
-              >
-                <path d="M840-320v-236L518-381q-18 10-38 10t-38-10L104-565q-11-6-15.5-15T84-600q0-11 4.5-20t15.5-15l338-184q9-5 18.5-7.5T480-829q10 0 19.5 2.5T518-819l381 208q10 5 15.5 14.5T920-576v256q0 17-11.5 28.5T880-280q-17 0-28.5-11.5T840-320ZM442-141 242-249q-20-11-31-30t-11-41v-152l242 131q18 10 38 10t38-10l242-131v152q0 22-11 41t-31 30L518-141q-9 5-18.5 7.5T480-131q-10 0-19.5-2.5T442-141Z" />
-              </svg>{" "}
-              {t("Formação")}
-            </h4>
-            <p className="formacao-texto">
-             {t("Formação description")} <br /> 
-             {t("Formação UFPE")}
-            </p>
-          </div>
+
+        <div className="about-copy animated-right">
+          <p>{t("Sobre parte 1")}</p>
+        </div>
+        <div className="about-strengths animated-right">
+          {strengths.map((item) => (
+            <article className="strength-item" key={item.titleKey}>
+              <svg className="strength-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5a0d73"><path d={item.icon}/></svg>
+              <div>
+                <h3>{t(item.titleKey)}</h3>
+                <p>{t(item.textKey)}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </ScrollReveal>

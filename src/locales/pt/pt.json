@@ -12,11 +12,15 @@
     "Sobre parte 1": "Desenvolvedora front-end com ampla experiência em tecnologias modernas de desenvolvimento web, como JavaScript, TypeScript, React, Svelte, Vue e Lit. Tenho uma forte paixão por UI/UX, garantindo que cada interface que desenvolvo não apenas atenda aos padrões técnicos, mas também proporcione uma experiência de usuário fluida. Minha carreira tem sido focada na criação de interfaces eficientes e escaláveis, com ênfase na padronização e manutenção de design systems. Além disso, possuo experiência em ambientes complexos, como SAPUI5 e WordPress, entregando projetos robustos e integrados.",
     "projeto_incrivel": "Tem um <span class=\"highlight\">Projeto Incrível</span><br />em mente? <span class=\"highlight-alt\">Vamos conversar</span>",
     "inicio": {
-      "hello": "Olá!",
+      "hello": "Olá! Eu sou",
       "im": "Eu sou",
       "role": "Engenheira de Software Front-end",
       "years": "8 anos",
-      "experience": "de experiência"
+      "experience": "de experiência",
+      "headline": "Eu crio experiencias front-end rapidas e escalaveis que <span>usuarios amam.</span>",
+      "description": "Engenheira de Software Front-end com mais de 8 anos de experiencia construindo aplicacoes web modernas com codigo limpo, performance e otima experiencia de uso.",
+      "view_projects": "Ver projetos",
+      "view_cv": "Ver CV"
     },
     "curriculo": {
       "download": "Visualizar currículo",
@@ -24,6 +28,8 @@
       "title": "Experiência profissional",
       "skills_more": "+{{count}}",
       "skills_less": "Mostrar menos",
+      "see_more": "Ver mais",
+      "see_less": "Mostrar menos",
       "skills_show_more_aria": "Mostrar mais {{count}} competências",
       "skills_show_less_aria": "Mostrar menos competências",
       "work_experience": [
@@ -199,7 +205,8 @@
             "Aprendizado ágil"
           ]
         }
-      ]
+      ],
+      "eyebrow": "Experiencia"
     },
     "footer": {
       "connect": "Vamos conectar",
@@ -212,6 +219,62 @@
       "project": "Projeto",
       "contact": "Contato",
       "copyright": "Copyright© 2025. Todos os direitos reservados."
+    },
+    "about": {
+      "eyebrow": "Sobre mim",
+      "title": "Transformo ideias em interfaces <span>bonitas</span>.",
+      "strengths": {
+        "problem_solver": {
+          "title": "Problem Solver",
+          "text": "Gosto de transformar desafios complexos em solucoes simples e intuitivas."
+        },
+        "detail_oriented": {
+          "title": "Detail Oriented",
+          "text": "Tenho atencao aos detalhes que fazem uma grande diferenca."
+        },
+        "always_learning": {
+          "title": "Always Learning",
+          "text": "Estou sempre explorando novas ferramentas e melhorando minhas habilidades."
+        }
+      }
+    },
+    "portfolio": {
+      "eyebrow": "Projetos em destaque",
+      "view_site": "Ver site",
+      "code": "Codigo",
+      "open_project": "Abrir {{project}}",
+      "project_preview": "Preview de {{project}}",
+      "tags_aria": "Tecnologias de {{project}}",
+      "projects": {
+        "edu_p": {
+          "description": "Portfolio pessoal construido com Vue, TypeScript e Tailwind CSS.",
+          "features": []
+        },
+        "agile_daily": {
+          "description": "Facilitador leve de reunioes diarias para times ageis, feito em Vue.js com persistencia em localStorage e sem dependencia de backend.",
+          "features": [
+            "Gestao de times e membros",
+            "Persistencia automatica com localStorage",
+            "Cronometro por participante com controles de pular e avancar"
+          ]
+        }
+      }
+    },
+    "skills": {
+      "previous_page": "Pagina anterior de habilidades",
+      "next_page": "Proxima pagina de habilidades",
+      "areas": {
+        "development": "Desenvolvimento",
+        "design": "Design",
+        "workflow": "Workflow"
+      }
+    },
+    "nav": {
+      "aria": "Navegacao principal",
+      "brand_aria": "Inicio de Thamires Morais",
+      "open_menu": "Abrir menu",
+      "close_menu": "Fechar menu",
+      "change_language": "Mudar idioma para {{language}}"
     }
   }
 }

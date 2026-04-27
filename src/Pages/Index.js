@@ -58,6 +58,10 @@ export default function Index() {
       </ScrollLoader>
 
       <ScrollLoader>
+        <Portfolio />
+      </ScrollLoader>
+
+      <ScrollLoader>
         <Skills />
       </ScrollLoader>
 
