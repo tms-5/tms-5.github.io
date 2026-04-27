@@ -1,8 +1,8 @@
 .portfolio-section {
   padding: 1rem 1rem 0;
   overflow: visible;
-      height: calc(100vh - 50px);
-      align-content: center;
+  height: calc(100vh - 50px);
+  align-content: center;
 }
 
 .projects-card {
@@ -34,32 +34,34 @@
 }
 
 .project-card {
- border: 1px solid rgba(62, 0, 82, 0.07);
-    border-radius: 14px;
-    background: white;
-    transition: transform 180ms ease, box-shadow 180ms ease;
-    height: stretch;
-    display: flex;
-    flex-direction: column;
+  border: 1px solid rgba(62, 0, 82, 0.07);
+  border-radius: 14px;
+  background: white;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+  height: stretch;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-      background-color: var(--nav-mist);
+  background-color: var(--nav-mist);
 }
 
 .project-media {
   width: 100%;
   aspect-ratio: 16 / 7;
-  
-    height: 250px;
+
+  height: 250px;
   display: block;
   background: #171717;
   cursor: pointer;
   overflow: hidden;
   border: 1px solid var(--nav-lavender);
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
 
 .project-media img {
@@ -67,7 +69,9 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: transform 240ms ease, filter 240ms ease;
+  transition:
+    transform 240ms ease,
+    filter 240ms ease;
 }
 
 .project-card:hover .project-media img {
@@ -76,10 +80,10 @@
 }
 
 .project-content {
-padding: 1.2rem;
-    text-align: left;
-    height: stretch;
-    justify-content: space-between;
+  padding: 1.2rem;
+  text-align: left;
+  height: stretch;
+  justify-content: space-between;
 }
 
 .project-content h3 {
@@ -155,7 +159,11 @@ padding: 1.2rem;
   font-weight: 800;
   white-space: nowrap;
   text-decoration: none !important;
-  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .project-actions a:hover {
