@@ -2,14 +2,18 @@
   "translation": {
     "Inicio": "Home",
     "Sobre": "About",
-    "Curriculo": "Professional Experience",
+    "Curriculo": "Experience",
     "Portfolio": "Portfolio",
     "Skills": "Skills",
     "Formação": "Education",
     "Formação description": "Graduated in Information Systems -",
     "Formação UFPE": "Federal University of Pernambuco (UFPE)",
     "Todos os direitos reservados": "All rights reserved",
-    "Sobre parte 1": "Front-end developer with extensive experience in modern web development technologies such as JavaScript, TypeScript, React, Svelte, Vue, and Lit. I have a strong passion for UI/UX, ensuring that every interface I develop not only meets technical standards but also provides a seamless user experience. My career has been focused on creating efficient and scalable interfaces, with an emphasis on standardization and maintenance of design systems. Additionally, I have experience in complex environments such as SAPUI5 and WordPress, delivering robust and integrated projects.",
+    "Sobre parte 1": [
+      "Front-end developer with extensive experience in modern web development technologies such as JavaScript, TypeScript, React, Svelte, Vue, and Lit.",
+      "I have a strong passion for UI/UX, ensuring that every interface I develop not only meets technical standards but also provides a seamless user experience.",
+      "My career has been focused on creating efficient and scalable interfaces, with an emphasis on standardization and maintenance of design systems. Additionally, I have experience in complex environments such as SAPUI5 and WordPress, delivering robust and integrated projects."
+    ],
     "projeto_incrivel": "Do you have an <span class=\"highlight\">Amazing Project</span><br />in mind? <span class=\"highlight-alt\">Let's talk</span>",
     "inicio": {
       "hello": "Hello! I'm",
@@ -37,7 +41,8 @@
           "company": "Trillia",
           "position": "Frontend Engineer",
           "meta": "Trillia · Full-time",
-          "date": "May 2024 – Present · 2 yrs",
+          "period": "May 2024 – Present",
+          "duration": "2 yrs",
           "location": "Remote",
           "topics": [
             "Developing a robust design system using LitElement, with a strong emphasis on accessibility and user experience, ensuring compliance with WCAG standards.",
@@ -73,9 +78,10 @@
         },
         {
           "company": "Dione",
-          "position": "Frontend Developer",
+          "position": "Frontend Engineer",
           "meta": "Dione · Full-time",
-          "date": "Mar 2023 – May 2024 · 1 yr 3 mos",
+          "period": "Mar 2023 – May 2024",
+          "duration": "1 yr 3 mos",
           "topics": [
             "Led the front-end team as a Senior Developer, overseeing the development of interactive interfaces using ReactJS and Svelte, while applying the best design practices to deliver engaging user experiences.",
             "Managed and mentored a team of junior and mid-level developers, providing technical guidance, fostering collaboration, and ensuring the quality and efficiency of all deliverables.",
@@ -107,7 +113,8 @@
           "company": "Universidade Federal de Pernambuco",
           "position": "Frontend Developer",
           "meta": "Universidade Federal de Pernambuco · Freelance",
-          "date": "Jan 2018 – May 2023 · 5 yrs 5 mos",
+          "period": "Jan 2018 – May 2023",
+          "duration": "5 yrs 5 mos",
           "topics": [
             "Collaborated as a UFPE fellow in the Reciprev project in partnership with Recife City Hall, focusing on front-end development and web design.",
             "Solely responsible for the creation, development, and ongoing support of the application, from initial design to final implementation.",
@@ -133,7 +140,8 @@
           "company": "Avanade",
           "position": "Frontend Developer",
           "meta": "Avanade · Full-time",
-          "date": "Jun 2021 – Feb 2023 · 1 yr 9 mos",
+          "period": "Jun 2021 – Feb 2023",
+          "duration": "1 yr 9 mos",
           "linkedinNote": "LinkedIn helped me get this job.",
           "topics": [
             "Developed robust enterprise applications using SAPUI5, tailored to meet specific business needs.",
@@ -158,7 +166,8 @@
           "company": "Tascom • Health Technology",
           "position": "Frontend Developer",
           "meta": "Tascom • Health Technology · Part-time",
-          "date": "Jan 2021 – Jun 2021 · 6 mos",
+          "period": "Jan 2021 – Jun 2021",
+          "duration": "6 mos",
           "topics": [
             "Worked with ReactJS in projects following agile methodologies.",
             "Managed tasks and workflows using the Kanban format with tools like Trello.",
@@ -184,7 +193,8 @@
           "company": "HAUT",
           "position": "Frontend Developer",
           "meta": "HAUT | Incorporadora Design · Internship",
-          "date": "Jun 2020 – Jan 2021 · 8 mos",
+          "period": "Jun 2020 – Jan 2021",
+          "duration": "8 mos",
           "linkedinNote": "LinkedIn helped me get this job.",
           "topics": [
             "Enhanced skills in ReactJS and prototype development using Figma.",
@@ -242,20 +252,38 @@
       "eyebrow": "Featured projects",
       "view_site": "View site",
       "code": "Code",
+      "previous_page": "Prev",
+      "next_page": "Next",
+      "pagination_aria": "Projects pagination",
       "open_project": "Open {{project}}",
       "project_preview": "{{project}} preview",
       "tags_aria": "{{project}} technologies",
       "projects": {
         "edu_p": {
-          "description": "Personal portfolio built with Vue, TypeScript and Tailwind CSS.",
-          "features": []
+          "date": "April 2026",
+          "description": "Personal portfolio created to present projects, skills and professional experience through a modern, responsive and easy-to-navigate interface.",
+          "features": [
+            "Responsive layout for different screens",
+            "Organized sections for professional presentation",
+            "Built with Vue, TypeScript and Tailwind CSS"
+          ]
         },
         "agile_daily": {
+          "date": "June 2025",
           "description": "A lightweight daily meeting facilitator for agile teams, built in Vue.js with localStorage persistence and no backend dependency.",
           "features": [
             "Team and member management",
             "Automatic localStorage persistence",
             "Participant timer with skip and next controls"
+          ]
+        },
+        "ronaldo_nutrii": {
+          "date": "April 2026",
+          "description": "Responsive landing page for a nutritionist, focused on professional presentation, services and contact.",
+          "features": [
+            "Modern responsive interface",
+            "Clear service presentation",
+            "Experience optimized for quick contact access"
           ]
         }
       }

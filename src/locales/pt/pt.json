@@ -2,14 +2,18 @@
   "translation": {
     "Inicio": "Início",
     "Sobre": "Sobre",
-    "Curriculo": "Experiência Profissional",
+    "Curriculo": "Experiência",
     "Portfolio": "Portfólio",
     "Skills": "Habilidades",
     "Formação": "Formação",
     "Formação description": "Graduada em Sistemas de Informação -",
     "Formação UFPE": "Universidade Federal de Pernambuco (UFPE)",
     "Todos os direitos reservados": "Todos os direitos reservados",
-    "Sobre parte 1": "Desenvolvedora front-end com ampla experiência em tecnologias modernas de desenvolvimento web, como JavaScript, TypeScript, React, Svelte, Vue e Lit. Tenho uma forte paixão por UI/UX, garantindo que cada interface que desenvolvo não apenas atenda aos padrões técnicos, mas também proporcione uma experiência de usuário fluida. Minha carreira tem sido focada na criação de interfaces eficientes e escaláveis, com ênfase na padronização e manutenção de design systems. Além disso, possuo experiência em ambientes complexos, como SAPUI5 e WordPress, entregando projetos robustos e integrados.",
+    "Sobre parte 1": [
+      "Desenvolvedora front-end com ampla experiência em tecnologias modernas de desenvolvimento web, como JavaScript, TypeScript, React, Svelte, Vue e Lit.",
+      "Tenho uma forte paixão por UI/UX, garantindo que cada interface que desenvolvo não apenas atenda aos padrões técnicos, mas também proporcione uma experiência de usuário fluida.",
+      "Minha carreira tem sido focada na criação de interfaces eficientes e escaláveis, com ênfase na padronização e manutenção de design systems. Além disso, possuo experiência em ambientes complexos, como SAPUI5 e WordPress, entregando projetos robustos e integrados."
+    ],
     "projeto_incrivel": "Tem um <span class=\"highlight\">Projeto Incrível</span><br />em mente? <span class=\"highlight-alt\">Vamos conversar</span>",
     "inicio": {
       "hello": "Olá! Eu sou",
@@ -37,7 +41,8 @@
           "company": "Trillia",
           "position": "Engenheira frontend",
           "meta": "Trillia · Tempo integral",
-          "date": "Mai de 2024 – o momento · 2 anos",
+          "period": "Mai de 2024 – o momento",
+          "duration": "2 anos",
           "location": "Remoto",
           "topics": [
             "Desenvolvimento de um design system robusto com LitElement, com forte ênfase em acessibilidade e experiência do usuário, garantindo conformidade com as diretrizes WCAG.",
@@ -75,7 +80,8 @@
           "company": "Dione",
           "position": "Desenvolvedora frontend",
           "meta": "Dione · Tempo integral",
-          "date": "Mar de 2023 – Mai de 2024 · 1 ano 3 meses",
+          "period": "Mar de 2023 – Mai de 2024",
+          "duration": "1 ano 3 meses",
           "topics": [
             "Liderança do time de front-end como desenvolvedora sênior, conduzindo interfaces interativas com ReactJS e Svelte e aplicando boas práticas de design.",
             "Gestão e mentoria de desenvolvedoras e desenvolvedores júnior e pleno, com orientação técnica, colaboração e qualidade das entregas.",
@@ -107,7 +113,8 @@
           "company": "Universidade Federal de Pernambuco",
           "position": "Desenvolvedora frontend",
           "meta": "Universidade Federal de Pernambuco · Freelance",
-          "date": "Jan de 2018 – Mai de 2023 · 5 anos 5 meses",
+          "period": "Jan de 2018 – Mai de 2023",
+          "duration": "5 anos 5 meses",
           "topics": [
             "Atuação como bolsista da UFPE no projeto Reciprev em parceria com a Prefeitura do Recife, com foco em desenvolvimento front-end e web design.",
             "Responsabilidade pela criação, desenvolvimento e suporte contínuo da aplicação, do desenho inicial à implementação final.",
@@ -133,7 +140,8 @@
           "company": "Avanade",
           "position": "Desenvolvedora frontend",
           "meta": "Avanade · Tempo integral",
-          "date": "Jun de 2021 – Fev de 2023 · 1 ano 9 meses",
+          "period": "Jun de 2021 – Fev de 2023",
+          "duration": "1 ano 9 meses",
           "linkedinNote": "O LinkedIn me ajudou a conseguir este emprego.",
           "topics": [
             "Desenvolvimento de aplicações empresariais robustas com SAPUI5, sob medida para necessidades de negócio.",
@@ -158,7 +166,8 @@
           "company": "Tascom • Tecnologia em Saúde",
           "position": "Desenvolvedora frontend",
           "meta": "Tascom • Tecnologia em Saúde · Meio período",
-          "date": "Jan de 2021 – Jun de 2021 · 6 meses",
+          "period": "Jan de 2021 – Jun de 2021",
+          "duration": "6 meses",
           "topics": [
             "Trabalho com ReactJS em projetos com metodologias ágeis.",
             "Gestão de tarefas e fluxos em Kanban com ferramentas como Trello.",
@@ -184,7 +193,8 @@
           "company": "HAUT",
           "position": "Desenvolvedora frontend",
           "meta": "HAUT | Incorporadora Design · Estágio",
-          "date": "Jun de 2020 – Jan de 2021 · 8 meses",
+          "period": "Jun de 2020 – Jan de 2021",
+          "duration": "8 meses",
           "linkedinNote": "O LinkedIn me ajudou a conseguir este emprego.",
           "topics": [
             "Aprimoramento de habilidades em ReactJS e prototipação com Figma.",
@@ -242,20 +252,38 @@
       "eyebrow": "Projetos em destaque",
       "view_site": "Ver site",
       "code": "Codigo",
+      "previous_page": "Prev",
+      "next_page": "Next",
+      "pagination_aria": "Paginacao de projetos",
       "open_project": "Abrir {{project}}",
       "project_preview": "Preview de {{project}}",
       "tags_aria": "Tecnologias de {{project}}",
       "projects": {
         "edu_p": {
-          "description": "Portfolio pessoal construido com Vue, TypeScript e Tailwind CSS.",
-          "features": []
+          "date": "Abril de 2026",
+          "description": "Portfolio pessoal desenvolvido para apresentar projetos, habilidades e experiencia profissional com uma interface moderna, responsiva e facil de navegar.",
+          "features": [
+            "Layout responsivo para diferentes telas",
+            "Secoes organizadas para apresentacao profissional",
+            "Construido com Vue, TypeScript e Tailwind CSS"
+          ]
         },
         "agile_daily": {
+          "date": "Junho de 2025",
           "description": "Facilitador leve de reunioes diarias para times ageis, feito em Vue.js com persistencia em localStorage e sem dependencia de backend.",
           "features": [
             "Gestao de times e membros",
             "Persistencia automatica com localStorage",
             "Cronometro por participante com controles de pular e avancar"
+          ]
+        },
+        "ronaldo_nutrii": {
+          "date": "Abril de 2026",
+          "description": "Landing page responsiva para nutricionista, com foco em apresentacao profissional, servicos e contato.",
+          "features": [
+            "Interface moderna e responsiva",
+            "Apresentacao clara dos servicos",
+            "Experiencia otimizada para acesso rapido ao contato"
           ]
         }
       }

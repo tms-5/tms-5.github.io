@@ -1,16 +1,15 @@
 import { lazy, Suspense, useRef, useState, useEffect } from 'react'
-import '../Assets/Utilitarios/Utilitarios.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Index.css'
 
-const Topbar = lazy(() => import('../Assets/Topbar/Topbar.js'))
-const Inicio = lazy(() => import('../Assets/Inicio/Inicio.js'))
-const Curriculo = lazy(() => import('../Assets/Curriculo/Curriculo.js'))
-const Sobre = lazy(() => import('../Assets/Sobre/Sobre.js'))
-const Portfolio = lazy(() => import('../Assets/Portfolio/Portfolio.js'))
-const Skills = lazy(() => import('../Assets/Skills/Skills.js'))
-const Contato = lazy(() => import('../Assets/Contato/Contato.js'))
-const Footer = lazy(() => import('../Assets/Footer/Footer.js'))
+const Topbar = lazy(() => import('../Sections/Topbar/Topbar.js'))
+const Inicio = lazy(() => import('../Sections/Inicio/Inicio.js'))
+const Curriculo = lazy(() => import('../Sections/Curriculo/Curriculo.js'))
+const Sobre = lazy(() => import('../Sections/Sobre/Sobre.js'))
+const Portfolio = lazy(() => import('../Sections/Portfolio/Portfolio.js'))
+const Skills = lazy(() => import('../Sections/Skills/Skills.js'))
+const Contato = lazy(() => import('../Sections/Contato/Contato.js'))
+const Footer = lazy(() => import('../Sections/Footer/Footer.js'))
 
 function ScrollLoader({ children, fallback = null }) {
   const ref = useRef()
@@ -32,7 +31,12 @@ function ScrollLoader({ children, fallback = null }) {
   }, [])
 
   return (
-    <div ref={ref}>
+    <div
+      ref={ref}
+      className={`section-scroll-frame ${
+        visible ? 'section-scroll-frame--visible' : ''
+      }`}
+    >
       {visible && <Suspense fallback={fallback}>{children}</Suspense>}
     </div>
   )
