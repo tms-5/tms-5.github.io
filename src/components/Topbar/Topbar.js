@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import ChangeLanguage from "./Components/ChangeLanguage";
 import logo from "../../Assets/Img/logo-web-png.png";
 import { useTranslation } from "react-i18next";
-import { UIButton, UIIconButton } from "../../components/ui";
+import { UIButton, UIIconButton } from "../ui";
 
 export default function Topbar() {
   const { t } = useTranslation();

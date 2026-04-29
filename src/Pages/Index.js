@@ -2,7 +2,7 @@ import { lazy, Suspense, useRef, useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Index.css'
 
-const Topbar = lazy(() => import('../Sections/Topbar/Topbar.js'))
+const Topbar = lazy(() => import('../components/Topbar/Topbar.js'))
 const Inicio = lazy(() => import('../Sections/Inicio/Inicio.js'))
 const Curriculo = lazy(() => import('../Sections/Curriculo/Curriculo.js'))
 const Sobre = lazy(() => import('../Sections/Sobre/Sobre.js'))

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { UITag } from "../../components/ui";
+import { UITag } from "./ui";
 
 export default function TimeLine({
   isLast = false,

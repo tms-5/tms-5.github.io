@@ -1,6 +1,6 @@
 import { changeLanguageService } from "../../../services/i18n.services";
 import { useTranslation } from "react-i18next";
-import { UIButton } from "../../../components/ui";
+import { UIButton } from "../../ui";
 
 const ChangeLanguage = () => {
   const { i18n, t } = useTranslation();

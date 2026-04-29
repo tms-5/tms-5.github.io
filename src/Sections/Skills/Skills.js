@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SkillCards from "./SkillCards";
-import ScrollReveal from "../Utilitarios/ScrollReveal";
+import ScrollReveal from "../../components/ScrollReveal";
 import { useTranslation } from "react-i18next";
 import { UICard, UICarrousel } from "../../components/ui";
 

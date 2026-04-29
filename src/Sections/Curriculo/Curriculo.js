@@ -1,4 +1,4 @@
-import TimeLine from "./TimeLine";
+import TimeLine from "../../components/Timeline";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { UIButton, UICard } from "../../components/ui";

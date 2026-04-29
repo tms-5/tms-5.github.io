@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import ScrollReveal from "../Utilitarios/ScrollReveal";
+import ScrollReveal from "../../components/ScrollReveal";
 import { UICard } from "../../components/ui";
 
 const strengths = [

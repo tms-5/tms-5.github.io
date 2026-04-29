@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../Assets/Img/logo-web-png.png";
-import ScrollReveal from "../Utilitarios/ScrollReveal";
+import ScrollReveal from "../../components/ScrollReveal";
 import { useTranslation, Trans } from "react-i18next";
 import { UIButton } from "../../components/ui";
 
