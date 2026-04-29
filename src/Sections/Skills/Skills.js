@@ -80,10 +80,14 @@ export default function Skills() {
   }
 
   return (
-    <ScrollReveal className="min-h-[60svh] bg-mist pt-8" id="Skills">
-      <div className="container grid p-8 text-center">
-        <h2 className="overflow-hidden">{t("Skills")}</h2>
-        <div className="flex items-center justify-center gap-8 max-md:flex-col">
+    <ScrollReveal className="h-[100svh] bg-mist pt-8" id="Skills">
+      <div className="container p-8 text-center h-[stretch] align-content-center">
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+          <p className="m-0 text-sm font-extrabold uppercase tracking-[0.08em] text-orchid">
+            {t("Skills")}
+          </p>
+        </div>
+        <div className="flex items-center justify-between gap-8 [@media(max-width:1200px)]:flex-col">
           <div className="flex min-w-[200px] flex-col gap-6 text-left text-[1.2rem]">
             {Object.keys(skillsPages).map((area) => (
               <div
@@ -103,7 +107,7 @@ export default function Skills() {
           <div className="max-md:w-full">
             <div className="flex min-h-[320px] flex-col items-center justify-center gap-4 max-md:py-6">
               <UICarrousel
-                className="grid w-full grid-cols-[44px_minmax(0,auto)_44px] items-center gap-3.5 p-[47px] max-md:grid-cols-2 max-md:p-4"
+                className="grid w-full grid-cols-[44px_minmax(0,auto)_44px] items-center gap-2 [@media(min-width:1201px)]:pl-[47px] py-8 max-md:grid-cols-2"
                 contentClassName="contents"
                 arrows="icons"
                 page={page}

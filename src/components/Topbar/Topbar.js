@@ -60,7 +60,7 @@ export default function Topbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-[100] overflow-visible backdrop-blur-[18px]">
       <nav
-        className="container grid min-h-[76px] grid-cols-[auto_1fr_auto] items-center gap-6 max-[920px]:grid-cols-[auto_auto] max-[920px]:justify-between"
+        className="container container-topbar grid min-h-[76px] grid-cols-[auto_1fr_auto] items-center gap-6 max-[920px]:grid-cols-[auto_auto] max-[920px]:justify-between"
         aria-label={t("nav.aria")}
       >
         <a

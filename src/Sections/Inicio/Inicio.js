@@ -44,7 +44,7 @@ export default function Inicio() {
         `}
       </style>
       <section
-        className="container grid min-h-screen grid-cols-1 items-center gap-6 overflow-visible pt-24 md:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)] md:pt-[118px]"
+        className="container max-height-[100vh] grid min-h-screen grid-cols-1 items-center gap-6 overflow-visible pt-24 md:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)] md:pt-[50px]"
         id="Inicio"
       >
         <div className="overflow-visible text-left text-neutral-950 md:text-left">

@@ -24,6 +24,21 @@
   color: white;
 }
 
+#Inicio {
+  max-height: calc(100vh - 76px);
+}
+
+@media (min-width: 920px) and (max-width: 1000px) {
+  .container-topbar {
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 920px) {
+   #Skills .container {
+    max-width: none !important;
+  }
+}
 
 @keyframes App-logo-spin {
   from {
