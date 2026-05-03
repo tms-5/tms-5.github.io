@@ -285,6 +285,15 @@
             "Clear service presentation",
             "Experience optimized for quick contact access"
           ]
+        },
+        "ana_giullia": {
+          "date": "May 2026",
+          "description": "Responsive personal portfolio presenting Ana Giullia's path across dentistry and data analysis.",
+          "features": [
+            "Content switch between Dentistry and Tech",
+            "Professional presentation with experience, courses and contact sections",
+            "Published on GitHub Pages"
+          ]
         }
       }
     },

@@ -285,6 +285,15 @@
             "Apresentacao clara dos servicos",
             "Experiencia otimizada para acesso rapido ao contato"
           ]
+        },
+        "ana_giullia": {
+          "date": "Maio de 2026",
+          "description": "Portfolio pessoal responsivo para apresentar a trajetoria da Ana Giullia nas areas de odontologia e analise de dados.",
+          "features": [
+            "Alternancia de conteudo entre Odonto e Tech",
+            "Apresentacao profissional com secoes de experiencia, cursos e contato",
+            "Publicado no GitHub Pages"
+          ]
         }
       }
     },

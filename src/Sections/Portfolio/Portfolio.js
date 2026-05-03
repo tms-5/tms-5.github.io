@@ -4,6 +4,7 @@ import { UIButton, UICard, UICarrousel, UITag } from "../../components/ui";
 import eduP from "../../Assets/Portfolio/Arquivos/edu-p.png";
 import agileDaily from "../../Assets/Portfolio/Arquivos/agile-daily.png";
 import ronaldoNutrii from "../../Assets/Portfolio/Arquivos/ronaldo-nutrii.png";
+import giuPortfolio from "../../Assets/Portfolio/Arquivos/giu-portfolio.jpeg";
 
 const DESKTOP_PROJECTS_PER_PAGE = 3;
 const TABLET_PROJECTS_PER_PAGE = 2;
@@ -47,6 +48,14 @@ const projects = [
     siteUrl: "https://ronaldo-nutrii.vercel.app/",
     codeUrl: "https://github.com/tms-5/ronaldo-portfolio",
     tags: ["React", "Tailwind CSS", "Vercel"],
+  },
+  {
+    key: "ana_giullia",
+    name: "Portfolio Ana Giullia",
+    image: giuPortfolio,
+    siteUrl: "https://tms-5.github.io/ana-giullia-portfolio/",
+    codeUrl: "https://github.com/tms-5/ana-giullia-portfolio",
+    tags: ["React", "Tailwind CSS", "GitHub Pages"],
   },
 ];
 
