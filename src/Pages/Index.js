@@ -1,5 +1,4 @@
 import { lazy, Suspense, useRef, useState, useEffect } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './Index.css'
 
 const Topbar = lazy(() => import('../components/Topbar/Topbar.js'))

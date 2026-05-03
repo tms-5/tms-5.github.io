@@ -311,6 +311,12 @@
       "brand_aria": "Thamires Morais home",
       "open_menu": "Open menu",
       "close_menu": "Close menu",
+      "home": "Home",
+      "about": "About",
+      "resume": "Experience",
+      "project": "Portfolio",
+      "skills": "Skills",
+      "contact": "Contact",
       "change_language": "Change language to {{language}}"
     }
   }

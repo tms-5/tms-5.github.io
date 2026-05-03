@@ -11,12 +11,12 @@ export default function Topbar() {
 
   const topics = useMemo(
     () => [
-      { name: "Inicio", href: "#Inicio" },
-      { name: "Curriculo", href: "#Curriculo" },
-      { name: "Sobre", href: "#Sobre" },
-      { name: "Portfolio", href: "#Portfolio" },
-      { name: "Skills", href: "#Skills" },
-      { name: "Contato", href: "#Contato" },
+      { labelKey: "nav.home", href: "#Inicio" },
+      { labelKey: "nav.resume", href: "#Curriculo" },
+      { labelKey: "nav.about", href: "#Sobre" },
+      { labelKey: "nav.project", href: "#Portfolio" },
+      { labelKey: "nav.skills", href: "#Skills" },
+      { labelKey: "nav.contact", href: "#Contato" },
     ],
     []
   );
@@ -127,7 +127,7 @@ export default function Topbar() {
               aria-current={activeHref === topic.href ? "page" : undefined}
               onClick={closeMenu}
             >
-              {t(topic.name)}
+              {t(topic.labelKey)}
             </a>
           ))}
         </div>
@@ -139,7 +139,7 @@ export default function Topbar() {
             variant="soft"
             href="#Contato"
           >
-            {t("Contato")}
+            {t("nav.contact")}
           </UIButton>
         </div>
       </nav>

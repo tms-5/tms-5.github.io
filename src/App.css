@@ -24,10 +24,6 @@
   color: white;
 }
 
-#Inicio {
-  max-height: calc(100vh - 76px);
-}
-
 @media (min-width: 920px) and (max-width: 1000px) {
   .container-topbar {
     max-width: none !important;

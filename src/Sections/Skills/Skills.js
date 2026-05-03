@@ -88,7 +88,7 @@ export default function Skills() {
           </p>
         </div>
         <div className="flex items-center justify-between gap-8 [@media(max-width:1200px)]:flex-col">
-          <div className="flex min-w-[200px] flex-col gap-6 text-left text-[1.2rem]">
+          <div className="flex min-w-[250px] flex-col gap-6 text-left text-[1.2rem]">
             {Object.keys(skillsPages).map((area) => (
               <div
                 key={area}
@@ -107,7 +107,7 @@ export default function Skills() {
           <div className="max-md:w-full">
             <div className="flex min-h-[320px] flex-col items-center justify-center gap-4 max-md:py-6">
               <UICarrousel
-                className="grid w-full grid-cols-[44px_minmax(0,auto)_44px] items-center gap-2 [@media(min-width:1201px)]:pl-[47px] py-8 max-md:grid-cols-2"
+                className="grid w-full grid-cols-[44px_minmax(0,auto)_44px] items-center gap-2 [@media(min-width:100px)]:flex-col] [@media(min-width:1201px)]:pl-[47px] py-6 max-md:grid-cols-2"
                 contentClassName="contents"
                 arrows="icons"
                 page={page}

@@ -133,7 +133,7 @@ export default function Inicio() {
           <img
             src={profilepic}
             alt="Thamires Morais"
-            className="relative z-[2] mx-auto max-w-[min(480px,92vw)] object-contain object-bottom opacity-0 drop-shadow-[0_30px_35px_rgba(62,0,82,0.16)] animate-zoom-in-profile md:mx-0 md:max-w-[calc(100vh-267px)]"
+            className="relative z-[2] mx-auto max-h-[430px] max-w-[min(480px,92vw)] object-contain object-bottom opacity-0 drop-shadow-[0_30px_35px_rgba(62,0,82,0.16)] animate-zoom-in-profile sm:max-h-[520px] md:mx-0 md:max-h-none md:max-w-[calc(100vh-267px)]"
             style={profileIn("0.32s")}
           />
           <div
